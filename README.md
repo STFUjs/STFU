@@ -1,11 +1,13 @@
-# STFU
 STFU: STANDARD TEXT FORMAT, UNIVERSAL
+
 
 <pre>
 <H1>Starting Notes:</H1>
 
 All numbers are inclusive [0i..5i]
 such as for(i=0;i<=5;i++) or while(i>=0){i--}
+
+Leading (first) bit is most significant.
 
 <H1>Bit Switch:</H1>
 
@@ -64,6 +66,17 @@ $({Any Extenders}'iNd3X'{Any Extenders}'TreE)
 
 But not mixed in any Turn.
 
+<H2>Turns & Slots</H2>
+
+The entire system is based on a Control Symbol (sometimes with a initial time slice), a sequence of Turns through a route "tree", a matching composite value, and compositions of sets in Slots. 
+
+$time(turn'turn)({any})
+
+In any of these, both the Turns and Slots, a STFU8 or UTF8 "text", a Context @() or !() or a Reference with Associative, an indexed tree ()() and composition, a *() "type" Declaration or a System ~(bits) can be included. A Number can be used as a Turn, as can a STFU8 or UTF8, even a turned reference Context!
+
+Or a set (') of any of them in Slots with or without the Turn index named. [N] if not ()()
+
+
 <H2>Adding Time:</H2>
 
 The initial time slice can be included for temporal versioning,
@@ -74,6 +87,13 @@ Numbers are 6-bit, the initial time slice is msb aligned to resolution.
 $5i5i() and $5i5i()()
 
 $5i5i56() and $5i5i56()()
+
+The time comes from a chopped 64b time, called "Fone"
+
+The Fone's time is chopped to 2^16 ms, slightly more than one clock second, 65 Fone Seconds, and 6 bit multiples. A short Fone slice is Fone Minutes or Fone Hours, to 64× each.
+
+
+
 
 ---
 <H1>HTTP Bytes</H1>
@@ -335,19 +355,146 @@ Like the pair of @(@)(🤗) associations, any point in any context can have inte
 
 In !()() this is called "Cube" and "Ball" held left-hand and right-hand.
 
-The "cube" is a box that holds stuff.
+The "cube" has a box that holds stuff.
 
 The "ball" is the Universal Context.
 
-Your stuff is in the box, including your concepts of how other stuff is related (or not), anywhere.
+Your stuff is in the box, including your concepts of how other stuff is related (or not) anywhere, in the box or far beyond!
 
-Your "cube" has its own "ball" where references from anywhere else are posted for reference.
+Your "cube" has its own "ball" where references from anywhere else are posted for reference. Every "cube" Context does!
 
 Any Associative Reference can have a diversity of attributes. This includes the standard set and any others that you can come up with, including association by another concept in any context.
 
 <H2>Associative Syntax Structure</H2>
 
 
+---
+
+<H1>Additional Standard Control Symbols:</H1>
+
+@ Context @(@)
+! Universal !()()
+~ System Tables ~(bits)
+.()() And ()() Local data
+
+<H2>Declaration "type" Anywhere!</H2>
+
+*() Declaration "type" anywhere
+
+Any (named'index'🦓)(@(🐩'1am'😴@stfu.site)(😜🤯🤪)) can include an Associative Reference with it's own type!
+
+.(named'index'🦓)(@(🐩'1am'😴@stfu.site)(*(@(😋'types'associative'😍@stfu.site)'
+(😍'value)(3)'(😍'type)(🤯)
+))
+
+
+Is an easy example of a Declared *() "type" using named index values for Accurate Representation!
+
+Any structure of knowledge or concepts can be represented and presented this way using the Declaration's referenced "show" "cube" "ball" "flow" and related definitions.
+
+<H2>,() "Alternate Text" ~(hint)</H2>
+
+At any level of Slots (except Turns), 
+" ,() " can be included as an alternate "hint" (typically a short text name or description), and "overload" values set in YOUR reference to another context, such as changing the color of a tooling in the "cube" when using their layout process.
+
+<H2>IRI Reference from ~(bits)</H2>
+
+/() is included for IRI URI URL reference from a definition in the #Declaration *() on how to use those ~(bits). Typically the description exhaustively describes the structure (image).
+
+---
+<H1>Declaration Conditions</H1>
+
+The entire system uses one standard format and one *() Declaration that includes the "host" Implementation getting and setting bits. 
+
+Containers of bits referenced in the host have their Declared structure and describe their processes or configuration therein.
+
+Valid "host" Implementations might extend a more direct physical process, like an ADD function of a Declared fixed bit width or "glsl" triangles into "show" or "flow". (Pixels)
+
+<H2>Merging Structures</H2>
+
+Multiples shall be handled as parallel records such as [a,b] of the same but different; many Associative References exist between the same Concepts, and similar Contexts may merge in presentation!
+
+---
+
+<H1>Declaration + "type"</H1>
+
+The Control Symbol *() is the Declaration.
+
+The Declaration either contains the definition of the structure or contains a reference to a Context that Declares the type's structure.
+
+The Declaration *() can contain the entire definition and how to correctly present your concepts or context anywhere!
+
+All structure, and all operation (such as the representation of your "cube" and "ball" and how to "show" them) are defined in the Declaration *()
+
+The host Implementation need only a minimally simple and formally valid ability to copy bits to various "wire" or "line" interfaces including screen pixels, phone or Internet connectivity, or the host's memory.
+
+The system in whole uses a "Table Basher" that is formally valid everywhere and collections of ~(bits) and *(structures) that you define.
+
+There is a minimal or host implementation augmented set of "Truth Tables". ~(true) And logic "flow".
+
+The *() includes everything necessary to calculate the Accurate Representation of your Context, Concepts, and Associated References and "show" them any way you want!
+
+There is a Declaration of how to "show" your Context, including how to Accurately Represent your "cube" and "ball", and inter-associated concepts beyond your "ball" in the "show"!
+
+Every Context has a cube and a ball, at every level.
+
+The cube has stuff in a box, the ball has the Universe.
+
+The cube has its own ball! Infinitely many cubes and balls inside each little Context (but preferably each general concept in it's own context) STFU!
+
+The type Declaration * takes care of everything else!
+
+<H2>Truth, Logic, FLOW</H2>
+
+The elementary logic, presentation, data representation, ... and flow control are all contained in the System Table.
+
+All you really need is the ability to copy bits between some place to another, at any scale.
+
+By using bits and containers of bits with only a minimal get&set function, every Context controls the entire process of Accurately representing it's data and presentation!
+
+<H2>SHOW CUBE BALL</H2>
+
+Every context, at any level, is provided a "cube" to Accurately represent it's stuff.
+
+Within the 4D cube, a 3D volume and time, you can represent your STFU any way you could possibly want!
+
+Animation, 3d objects and tooling, human interaction, layout graphemes or audible phonemes, etc. You have explicit control of how your context is represented!
+
+The "show" and it's "flow" in the *() Declaration describes how your concepts are presented in your "cube", how data from your STFU boxes are represented, and how Associative References in your cube or from it's ball are presented.
+
+Beyond your "cube" at any level is a "ball" that includes the Contexts and Associative References for the entire universe.
+
+Your *() Declaration's "show" handles ALL of the layout and presentation for your Concepts and Contexts anywhere they go, and do exactly the same for every STFU Context that gets to you!
+
+<H2>Declaration Efficiency, Burdon</H2>
+
+The Declaration *() includes an overview of the technical processes of presentation including controls for efficiency, complexity, detail, and the description of how to Accurately Represent the Concepts in the best way for anyone.
+
+Everything goes in a "cube" or controlled by a "ball"!
+
+
+<H2>Declaration's in Contexts</H2>
+
+Every Context has a Declaration of it's structure and how to Accurately present it.
+
+Any specific data can include it's own unique "show" or "type" or it can reference a Context *(*(@(@))) somewhere that describes a way you prefer.
+
+Multiple ways are merged for the most correct representation possible!
+
+
+<H2>FLOW & control</H2>
+
+Every process related to your Context is controlled entirely by your description in the *() Declaration.
+
+The entire system does nothing other than move bits around and tell the host Implementation to put bits as pixels on a screen or put bits to wire and get some more! (Any wire, audio, video, interfaces, camera, phone or Internet, or as a host for the data!)
+
+Extensions of the bit operations in formally valid implementations make Accurate Representation and presentation very fast and efficient!
+
+Entire complexities of process can be implemented in your Context with the "show" "cube" "ball" "flow" in the *() Declaration.
+
+The template that shows this structure and Accurately Represents these Concepts is simply a set of descriptions in the Declaration that request the valid implementations "host" to move bits around to various places ALSO described by a Declaration in a Context.
+
+Anywhere!
 
 
 ---
@@ -366,6 +513,8 @@ A context could change to someone else, or become outdated.
 allows for a n×6 bit initial time slice to be indicated, providing versioning and history and the References to it can be stored on the local time slice as well. msb aligned
 
 @5i5i(@)() ALL THE REFERENCES!
+
+It's better to create a new timeslice or tree'd Context when things change, keeping the other ones because someone somewhere else might reference them!
 
 
 
@@ -419,5 +568,5 @@ Bit-Sequential processing tree with parallel offsets and optional alignments
 <H1></H1>
 
 ---
- 
+
 
