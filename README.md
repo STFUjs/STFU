@@ -21,7 +21,7 @@ are encoded in 2-byte Expanders:
 
 110xxxxx 10xxxxxx
 
-"letter" 'a' is 110 00000 10 01100001
+"letter" 'a' is 110 00000 10 1100001
 
 Numbers and some Control Symbols are mapped from "ascii" of the corresponding "character".
 
@@ -123,13 +123,18 @@ $(Index'Tr3E)(v)
 
 For @ and !, the Universal Contexts:
 
-@time(Context'tree@host.tld)(😴) is an Associative Reference
-
+@time(Context'tree@host.tld)(😴) is an Associative Reference 
 @time(Context'tree@host.tld) is the Context (and "file" name!)
-
 @time(Context'tree@host.tld)() is the References "file"!
 
 Same for !() and !()()
+
+Or without time:
+
+@(Context'tree@host.tld)
+@(Context'tree@host.tld)()
+
+These are the URI IRI URL "file name" or reference. at host.tld's interface, as declared in /@(@host.tld) or /@() ”file" via host.tld
 
 <!--
 \n
@@ -414,5 +419,5 @@ Bit-Sequential processing tree with parallel offsets and optional alignments
 <H1></H1>
 
 ---
-
+ 
 
