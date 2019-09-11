@@ -1,4 +1,6 @@
-STFU: STANDARD TEXT FORMAT, UNIVERSAL
+<font size="8in">
+STFU: STANDARD TEXT FORMAT - UNIVERSAL
+</font>
 
 
 <pre>
@@ -16,6 +18,168 @@ Leading (first) bit is most significant.
 1* Formal ("UTF8" style) Expander
 
 ---
+<script type="text/javascript">
+
+var x = new Array();
+x[0] = new Array();//0..9a..zA..Z_-
+x[1] = new Array();//#
+x[2] = new Array();//[#ascii]
+x[3] = new Array();//#
+x[4] = [
+[[48,10,0],[97,26,10],[65,26,36],[95,1,62],[45,1,63]],
+[
+33,35,36,38,39,40,41,42,43,44,46,47,59,61,63,64,126,10,
+33,39,40,41,42,46,126,10
+]
+];
+
+for(n=0;n<x[4][0].length;n++)
+{
+	for(v=0;v<x[4][0][n][1];v++)
+	{
+		PutNumbs(v+x[4][0][n][2],v+x[4][0][n][0]);
+	}
+}
+
+for(n=0;n<x[4][1].length;n++)
+{
+	PutNumbs((x[4][1][n] | parseInt("01000000", 2)),x[4][1][n]);
+}
+
+function PutNumbs(a,b){
+	x[0][a]=String.fromCharCode(b);
+	x[1][a]=b;
+	x[2][String.fromCharCode(b)]=a;
+	x[3][b]=a;
+}
+
+function NSix(n,count,offset){
+	var s ="";
+	for (var i=offset;i<=count;i++)
+		//s=x[0][(n>>(6*i))&0x3f] + s;
+		s=x[0][(n & (0x3f << (i*6)))>>(i*6)] + s;
+	return s;
+}
+
+function SixN(s,count,offset){
+	var t=0;
+	for (var i=offset;i<=count;i++)
+		t= t | (x[3][s.charCodeAt(count-i)]<<(6*i) );
+	return t;
+}
+
+function SixT(s){
+	return ( Math.pow(2,10) * SixN(s,5,0) );
+}
+
+function TSix(t){
+	return NSix(t/Math.pow(2,10),5,0);
+}
+
+function TSixNow()
+{
+document.write(TSix(new Date().getTime()));
+}
+
+//document.write("<hr> "+TSix(new Date().getTime()) +"<hr>");
+//document.write("<hr> "+SixT(TSix(new Date().getTime())) +"<hr>");
+
+
+function SpewChars()
+{
+for(o=0;o<x.length-1;o++)
+{
+document.write("<br>x["+o+"] = [");
+for(q=0;q<x[o].length;q++)
+{
+if(x[o][q])
+document.write(x[o][q]);
+if(q!=x[o].length-1)document.write(",");
+}
+document.write("];");
+}
+}
+
+
+
+
+//expand these to 8, option of next Expander (to 63i)
+
+//into byte[].
+
+ function char2utf8(input) {
+    var output = "";
+
+    for (var n = 0; n < input.length; n++) {
+        var c = input.charCodeAt(n);
+
+        if (c < 128) {
+output += String.fromCharCode( (c>>6) | parseInt("11000000", 2));
+output += String.fromCharCode( (c & 63) | parseInt("10000000", 2));
+//String.fromCharCode(c);
+
+//these are the same, crop 127, use sequential 8 = 42b
+
+        } else if ((c > 127) && (c < 2048)) {
+            output += String.fromCharCode((c >> 6) | 192);
+            output += String.fromCharCode((c & 63) | 128);
+        } else {
+            output += String.fromCharCode((c >> 12) | 224);
+            output += String.fromCharCode(((c >> 6) & 63) | 128);
+            output += String.fromCharCode((c & 63) | 128);
+        }
+//through all 8
+    }
+    return output;
+}
+
+  function utf82char(input) {
+    var output = "", i = 0, c = c1 = c2 = 0;
+
+    while (i < input.length) {
+        c = input.charCodeAt(i);
+
+        if (c < 128) {
+//stick control symbols here
+            output += String.fromCharCode(c);
+            i++;
+
+        } else if ((c > 191) && (c < 224)) {
+            c2 = input.charCodeAt(i + 1);
+            output += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+            i += 2;
+        } else {
+            c2 = input.charCodeAt(i + 1);
+            c3 = input.charCodeAt(i + 2);
+            output += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+            i += 3;
+//and the full length
+        }
+    }
+
+    return output;
+}
+
+function checkSTFU8(s,radix,decorate)
+{
+var ss = "";
+
+for (var n = 0; n < s.length; n++) 
+        ss += " " + s.charCodeAt(n).toString(radix);
+//s.charCodeAt(n);
+
+return ss;
+}
+
+function char2bits(s){
+return checkSTFU8(char2utf8(s), 2, 0);
+}
+
+function FormatSTFU8(){} //put this Back into STFU8 Standard Declarations
+
+</script>
+
+
 <H1>All Characters are in Expanders</H1>
 
 ALL "letters" or symbols "character" <= 127
@@ -23,14 +187,20 @@ are encoded in 2-byte Expanders:
 
 110xxxxx 10xxxxxx
 
-"letter" 'a' is 110 00000 10 1100001
+For example: <script>var s = 'a';document.write(s + " or " +  s.charCodeAt(0).toString(2) + " is:" + char2bits(s));</script>
+
+Or letter '0' should actually be zero?
+<script>var s = '0';document.write(s + " or " +  s.charCodeAt(0).toString(2) + " is:" + char2bits(s));</script>
 
 Numbers and some Control Symbols are mapped from "ascii" of the corresponding "character".
 
----
-<H1>Expanders, Extenders & UTF8</H1>
+Otherwise these aren't  
+<script>var s = "'Numbers'";document.write(s + " :" + char2bits(s));</script>
 
-All 8-bit Byte Extenders are available:
+---
+<H1>Expanders & UTF8</H1>
+
+All 8-bit Byte Expanders are available:
 
 len byte[0]  byte[1]  byte[2]  byte[3] ...
 
@@ -56,13 +226,13 @@ For any Symbol Table: A Control Symbol or Chracter $
 
 $(index)
 
-$(number'index'tree)(v)
+$(number'{utf8|$()|Number}'index'tree)(v)
 
 or
 
-$({Any Extenders})
+$({Any Expanders})
 
-$({Any Extenders}'iNd3X'{Any Extenders}'TreE)
+$({Any Expanders}'iNd3X'{Any Expanders}'TreE)
 
 But not mixed in any Turn.
 
@@ -70,7 +240,9 @@ But not mixed in any Turn.
 
 The entire system is based on a Control Symbol (sometimes with a initial time slice), a sequence of Turns through a route "tree", a matching composite value, and compositions of sets in Slots. 
 
-$time(turn'turn)({any})
+
+$(turn'turn)({any})
+With time: $<script>TSixNow();</script>(turn'turn)({any})
 
 In any of these, both the Turns and Slots, a STFU8 or UTF8 "text", a Context @() or !() or a Reference with Associative, an indexed tree ()() and composition, a *() "type" Declaration or a System ~(bits) can be included. A Number can be used as a Turn, as can a STFU8 or UTF8, even a turned reference Context!
 
@@ -84,13 +256,20 @@ it's associated references per referenced initial time as well.
 
 Numbers are 6-bit, the initial time slice is msb aligned to resolution.
 
-$5i5i() and $5i5i()()
+$() and $()()
+<!--
+Plus 4×6=24 bit time:
 
-$5i5i56() and $5i5i56()()
+$<script>TFourNow();</script>() and $<script>TFourNow();</script>()()
+-->
+
+Plus 6×6 bit Time:
+
+$<script>TSixNow();</script>() and $<script>TSixNow();</script>()()
 
 The time comes from a chopped 64b time, called "Fone"
 
-The Fone's time is chopped to 2^16 ms, slightly more than one clock second, 65 Fone Seconds, and 6 bit multiples. A short Fone slice is Fone Minutes or Fone Hours, to 64× each.
+The Fone's time is chopped to 2^10 ms, slightly more than one clock second, 65 Fone Seconds, and 6 bit multiples. A short Fone slice is Fone Minutes or Fone Hours, to 64× each.
 
 
 
@@ -143,9 +322,9 @@ $(Index'Tr3E)(v)
 
 For @ and !, the Universal Contexts:
 
-@time(Context'tree@host.tld)(😴) is an Associative Reference 
-@time(Context'tree@host.tld) is the Context (and "file" name!)
-@time(Context'tree@host.tld)() is the References "file"!
+@<script>TSixNow();</script>(Context'tree@host.tld)(😴) is an Associative Reference 
+@<script>TSixNow();</script>(Context'tree@host.tld) is the Context (and "file" name!)
+@<script>TSixNow();</script>(Context'tree@host.tld)() is the References "file"!
 
 Same for !() and !()()
 
@@ -196,10 +375,11 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ_-
 
 <H2>Control Symbols:</H2>
 
-Per the available Symbols, and with the ~ in 0111111, the ' is , and the Syntax is $()()
+Per the available Symbols from HTTP the Syntax is $(')()
 
 # breaks in "IRI"
 $ breaks in PHP, etc
+? & = ; break POST & GET
 * and : break in file systems
 / is IRI Path
 punycode has mutilated -
@@ -222,12 +402,15 @@ And POST:
 
 !'().~
 
-The containing Symbols ( "left hand" and ) "right hand"
+The containing Symbols ( "leading hand" and ) "other hand"
 combine with the ' as $((')(')'()())() 
 to form (iNd3x'Turns) with (index)(Slots).
 
-These numbers or Expanders (including "UTF8")
+These Numbers, Control Symbols, or Expanders (including "UTF8")
 provide the tree's Turns and the set's Slots.
+
+<H2>Numbers & Control Symbols:</H2>
+<small><script>SpewChars();</script></small>
 
 
 ---
@@ -277,11 +460,11 @@ The "named" host assumes TLD, but can be any system type. ~(demo'tel'sms)(1'000'
 
 For @ and !, the Universal Contexts:
 
-@time(Context'tree@host.tld)(😴) is an Associative Reference
+@<script>TSixNow();</script>(Context'tree@host.tld)(😴) is an Associative Reference
 
-@time(Context'tree@host.tld) is the Context (and "file" name!)
+@<script>TSixNow();</script>(Context'tree@host.tld) is the Context (and "file" name!)
 
-@time(Context'tree@host.tld)() is the References "file"!
+@<script>TSixNow();</script>(Context'tree@host.tld)() is the References "file"!
 
 Same for !() and !()()
 
@@ -353,7 +536,7 @@ Simple!
 
 Like the pair of @(@)(🤗) associations, any point in any context can have inter-related associations with any other, anywhere.
 
-In !()() this is called "Cube" and "Ball" held left-hand and right-hand.
+In !()() this is called "Cube" and "Ball" held leading-hand and other-hand.
 
 The "cube" has a box that holds stuff.
 
@@ -507,12 +690,12 @@ Control codes for previous & next allow the sequence in time to be loaded togeth
 
 A context could change to someone else, or become outdated.
 
-@5i5i5i(@) or @5i5i(@)
-!abCdEf(...)
+@<script>TSixNow();</script>(@) or @<script>TSixNow();</script>(@)
+!<script>TSixNow();</script>(...)
 
 allows for a n×6 bit initial time slice to be indicated, providing versioning and history and the References to it can be stored on the local time slice as well. msb aligned
 
-@5i5i(@)() ALL THE REFERENCES!
+@<script>TSixNow();</script>(@)() ALL THE REFERENCES!
 
 It's better to create a new timeslice or tree'd Context when things change, keeping the other ones because someone somewhere else might reference them!
 
