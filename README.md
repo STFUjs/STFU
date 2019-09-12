@@ -1,3 +1,120 @@
+STFU(0)
+
+<font size="8in">
+STFU: STANDARD TEXT FORMAT - UNIVERSAL
+</font>
+
+
+<pre>
+
+<H1>STFU: STFUjs, STFU7 "STFU8", STFUf & STFU*</H1>
+
+<h1>STFU: Standard Text Format - Universal</h1>
+
+STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation.
+
+<h1>STFU & STFUjs </h1>
+<h2>STFU</h2>
+STFU Accurately represents ALL knowledge and conceptualization in a simple and Standard Text Format -Universal.
+
+In any natural language or technical representation, concepts are related to concepts by other concepts...
+
+In any form, the structure of communication is an attempt to convey concepts.
+
+Most natural languages, be them spoken or written or graphical or gesture, lack sufficient effective structure and are inefficient. Technical representations are lacking.
+
+STFU combines all these requirements for Accurate Representation into one effective form!
+
+<h2>STFU in Text</h2>
+Most communication uses some form of text or structure, STFU can be used anywhere!
+
+<h3>@() Context</h3>
+@() is the general form of a Context
+
+@(@) is the Context accessable somewhere
+
+@(My'Concept'TrE3@mysite.tld)
+
+<h3>STFU's General Form: Context</h3>
+
+STFU uses one standard form, an indicator Symbol with a Set of Turns ("path") and a Set of Slots (information).
+
+@()()
+
+The first expansion includes the full Context:
+
+@(intro@stfu.site)
+
+This is the parts "Entity Context" [at] "Host Context"
+
+The Host Context has its own STFU Context @(@host.tld)
+
+A Context exists at any level of the Universe.
+
+An "Entity Context" can be included, such as your @(name@my.tld)
+
+Any Context has any diversity of sub contexts, so you can use @(me'stuff@my.tld) in the tree of Turns
+
+The Context can 
+@(pet'toys'3@my.tld) have named or numeric indexes in the Turns, and references to other contexts.
+
+Each Context can have lots of stuff inside, and youu Declare how it is presented!
+
+<h3>@()() Associative Reference</h3>
+
+Because every Context of STFU's Universal Context includes the Tree of Turns and the information in that Context, inter-relations of Concepts are extremely easy!
+
+All Structures of Representation have ther Turns and their information in Slots.
+
+Concepts are represented by information in Slots.
+
+A Slot can have an Associative Reference:
+
+@(intro@sttfu.site)(@(pet@stfu.site)(likes))
+
+This Inter-Associative Reference is available anywhere, inside the same Context or between any Concepts anywhere!
+
+@(me'stuff'pet'toys'GreenThing@my.tld)(@(pet'toys'3@my.tld))(same))
+
+In STFU in Text (or JSON, etc) the Index Turns are "6-bit" Numbers each character or "Quoted Turns including UTF", spaces and whitespace are not inside unless quoted. The Numbers are 0..9a..zA..Z_- so punycode can be included as a number in @(@xn-stfu.tld). The only quote mark is "double-quote" %2
+
+In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced.
+
+
+<h3>@()(@()()) The Universe, Referenced</h3>
+<h3>STFU in Texts</h3>
+Anywhere a Concept may be presented, a STFU Context can Accurately Represent it and the Concept's Inter-Association to other Concepts.
+
+@(intro'Concepts@stfu.site) is Referenced
+
+@(intro'Concepts@stfu.site)(includes) is Referenced Accurately
+
+<h3>STFU</h3>
+
+<h2>STFUjs</h2>
+ 
+STFU's reference Implementation STFUjs @(STFUjs@stfujs.com) handles all of the forms of STFU's Accurate Representation and performs the presentation of your Concepts!
+
+Not only can it accurately represent a reference or some concept, STFU also makes sure all of your concepts are presented exactly the way you want them to be!
+
+
+
+
+
+
+<h3>STFU</h3>
+<h3>STFU</h3>
+<h3>STFU</h3>
+<h3>STFU</h3>
+<h3>STFU</h3>
+
+
+
+
+
+
+
+
 <font size="8in">
 STFU: STANDARD TEXT FORMAT - UNIVERSAL
 </font>
