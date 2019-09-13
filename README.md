@@ -107,9 +107,11 @@ Anywhere a Concept may be presented, a STFU Context can Accurately Represent it 
 @(intro'Concepts@stfu.site)(includes) is Referenced Accurately
 
 <h3>Finding @(@) Contexts in Text</h3>
+Finding @(@) Contexts is easy!
+
 Because the pattern @( is rare, as is !() as is the @<script>TSixNow();</script>(turn'turn@your.tld)({any}) Context with time, finding @(@) Contexts is easy!
 
-It is easiest to search for the @ character followed by a ( Context or a 6 number "ascii" Time in the same pattern:
+It is easiest to search for the @ character followed by a ( Context or a 6 number "ascii" Time and ( in the same pattern:
 
 @(you@your.tld)
 @(you'stuff'🧠@your.tld)
@@ -134,7 +136,9 @@ The optional initial Time is very important!
 The @(@)(@(@)(x)) form of Associative Reference makes it easy to separate the @(@)() from other indexed values ()() or (Slots).
 
 <Small>
-A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with (). Always use the correct form.
+A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with (). 
+
+Always use the correct form.
 
 In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
 
@@ -404,7 +408,9 @@ function FormatSTFU8(){} //put this Back into STFU8 Standard Declarations
 
 ALL "letters" or symbols "character" are encoded in STFU.
 
-(These include the old "ascii" <= 127. All of them are encoded in Expanders. Control Symbols are NOT "text". Collections of bits are packed in 00x*)
+(These include the old "ascii" <= 127. All of them are encoded in Expanders. 
+Control Symbols are NOT "text" in 01x*
+Collections of bits are packed in 00x*)
 
 110xxxxx 10xxxxxx in STFU8
 
@@ -430,7 +436,7 @@ _-
 
 The "64" Numbers and Control Symbols are mapped from "ascii" of the corresponding "character".
 
-Control Symbols in the text, namely @(') !(') and some others are converted to the more effective STFU when validated.
+Control Symbols in the text, namely @(') !(') and some others *() ~() .() are converted to the more effective STFU when validated. !'()*.~ 
 
 Everything else, both "UTF" and "ascii", are packed in STFU Expanders.
 
@@ -731,7 +737,7 @@ Or without time:
 @(Context'tree@host.tld)
 @(Context'tree@host.tld)()
 
-These are the URI IRI URL "file name" or reference. at host.tld's interface, as declared in /@(@host.tld) or /@() ”file" via host.tld
+These are the URI IRI URL "file name" or reference. at host.tld's interface, as declared in "/@(@host.tld)" or "/@()' "file" via host.tld
 
 <H2>Local Context:</H2>
 
