@@ -1,4 +1,9 @@
+
 STFU(0)
+<hr>
+
+
+<hr>
 
 <font size="8in">
 STFU: STANDARD TEXT FORMAT - UNIVERSAL
@@ -7,15 +12,15 @@ STFU: STANDARD TEXT FORMAT - UNIVERSAL
 
 <pre>
 
-<H1>STFU: STFUjs, STFU7 "STFU8", STFUf & STFU*</H1>
+<H1>STFU: STFUjs, STFU7 + "STFU8", STFUf, & STFU*</H1>
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
 STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation.
 
-<h1>STFU & STFUjs </h1>
+<h1>STFU & STFUjs</h1>
 <h2>STFU</h2>
-STFU Accurately represents ALL knowledge and conceptualization in a simple and Standard Text Format -Universal.
+STFU Accurately represents ALL knowledge and conceptualization in a simple and <b>Standard Text Format - Universal</b>.
 
 In any natural language or technical representation, concepts are related to concepts by other concepts...
 
@@ -23,65 +28,77 @@ In any form, the structure of communication is an attempt to convey concepts.
 
 Most natural languages, be them spoken or written or graphical or gesture, lack sufficient effective structure and are inefficient. Technical representations are lacking.
 
-STFU combines all these requirements for Accurate Representation into one effective form!
+STFU combines all these requirements for Accurate Representation into one <b>effective</b> form!
 
-<h2>STFU in Text</h2>
+<h2>STFU in ANY Text</h2>
 Most communication uses some form of text or structure, STFU can be used anywhere!
 
-<h3>@() Context</h3>
+<h3>@(@) Context</h3>
 @() is the general form of a Context
 
 @(@) is the Context accessable somewhere
 
 @(My'Concept'TrE3@mysite.tld)
 
-<h3>STFU's General Form: Context</h3>
+Every @(@) Context is inside the the Universal Tree. In the more sophisticated !()(), the structure is more explicit.
+
+<h3>STFU's General Form: @(@) Context</h3>
 
 STFU uses one standard form, an indicator Symbol with a Set of Turns ("path") and a Set of Slots (information).
 
-@()()
+@(@)()
 
 The first expansion includes the full Context:
 
 @(intro@stfu.site)
 
-This is the parts "Entity Context" [at] "Host Context"
+This is the parts "Entity Context" [at] "Host Context" 
 
-The Host Context has its own STFU Context @(@host.tld)
+The Host Context has its own STFU Context @(@host.tld) that's inside the Universal Context.
+
+The Host Context can be implicit @(this'part) inside some "text", but the fully formed @(demo'this'part@stfu.site) is preferred.
 
 A Context exists at any level of the Universe.
 
 An "Entity Context" can be included, such as your @(name@my.tld)
 
-Any Context has any diversity of sub contexts, so you can use @(me'stuff@my.tld) in the tree of Turns
+Any Context has any diversity of sub contexts, so you can use @(me'stuff@my.tld) in the Universal Tree of Turns.
 
 The Context can 
 @(pet'toys'3@my.tld) have named or numeric indexes in the Turns, and references to other contexts.
 
-Each Context can have lots of stuff inside, and youu Declare how it is presented!
+Each Context can have lots of stuff inside, and you Declare how it is presented!
 
-<h3>@()() Associative Reference</h3>
+Inside any Context,
 
-Because every Context of STFU's Universal Context includes the Tree of Turns and the information in that Context, inter-relations of Concepts are extremely easy!
+(Turns'in'Trees'4'5)((Slots'Slots)'oR'(3'2'more'1'turns)(aAzZ-_-_)'(indexed)(Slots))
 
-All Structures of Representation have ther Turns and their information in Slots.
+Symbol ' is used similar to [,] or {,} in either Turns or ()() named/indexed or () unnamed Slots.
+
+() and ()() both use the same symbol because it gets through HTTP correctly. (See below.)
+
+<h3>@(@)() Associative Reference</h3>
+
+Because every @(@) Context of STFU's Universal Context includes the Tree of Turns and the information in that Context, inter-relations of Concepts are extremely easy!
+
+All Structures of Representation have their Tree of Turns and their information in Slots.
 
 Concepts are represented by information in Slots.
 
 A Slot can have an Associative Reference:
 
-@(intro@sttfu.site)(@(pet@stfu.site)(likes))
+@(intro@stfu.site)(@(pet@stfu.site)(likes))
 
 This Inter-Associative Reference is available anywhere, inside the same Context or between any Concepts anywhere!
 
-@(me'stuff'pet'toys'GreenThing@my.tld)(@(pet'toys'3@my.tld))(same))
+@(me'stuff'pet'toys'"Green Thing"@my.tld)(@(pet'toys'3@my.tld))(same))
 
-In STFU in Text (or JSON, etc) the Index Turns are "6-bit" Numbers each character or "Quoted Turns including UTF", spaces and whitespace are not inside unless quoted. The Numbers are 0..9a..zA..Z_- so punycode can be included as a number in @(@xn-stfu.tld). The only quote mark is "double-quote" %2
+The Associative Reference can be a simple text or collection of bits or a Declaration.
 
-In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced.
+@(@)(@(@)(*(demo'refs@stfu.site)'(how)(345))
 
 
-<h3>@()(@()()) The Universe, Referenced</h3>
+<h2>@(@)(@(@)()) The Universe, Referenced</h2>
 <h3>STFU in Texts</h3>
 Anywhere a Concept may be presented, a STFU Context can Accurately Represent it and the Concept's Inter-Association to other Concepts.
 
@@ -89,52 +106,136 @@ Anywhere a Concept may be presented, a STFU Context can Accurately Represent it 
 
 @(intro'Concepts@stfu.site)(includes) is Referenced Accurately
 
-<h3>STFU</h3>
+<h3>Finding @(@) Contexts in Text</h3>
+Because the pattern @( is rare, as is !() as is the @<script>TSixNow();</script>(turn'turn@your.tld)({any}) Context with time, finding @(@) Contexts is easy!
+
+It is easiest to search for the @ character followed by a ( Context or a 6 number "ascii" Time in the same pattern:
+
+@(you@your.tld)
+@(you'stuff'🧠@your.tld)
+
+Or with a specific Time:
+
+@t1m3rS(you'stuff'🧠@your.tld)
+
+Or with information:
+
+@(you@your.tld)(~(refs)(1)'(my'type)(s2)'*(@(demo'type@stfu.site))
+
+Or an Associative Reference:
+
+@(you'stuff'🧠@your.tld)(@t1m3rS(you'stuff'🧠@your.tld)(includes))
+
+Combined:
+@<script>TSixNow();</script>(You'turn@your.tld)(@t1m3rS(you'stuff'🧠@your.tld)(saw))
+
+The optional initial Time is very important!
+
+The @(@)(@(@)(x)) form of Associative Reference makes it easy to separate the @(@)() from other indexed values ()() or (Slots).
+
+<Small>
+A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with (). Always use the correct form.
+
+In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
+
+Use UTF8 "text" unless it's in a JSON string as \uxxxx.
+
+Use STFU's reader.
+
+</Small>
+
+In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced.
+
+
+<h3>@(@)() in Text Examples</h3>
+
+The @(@) Context Reference in ANY Text is a combination of the Context Tree and the supporting "named" Host Context.
+
+@(@) in text is a "UTF" string or 6-bit number as "ascii" (or null) indicating the primary context,
+
+Context:
+@(🐩
+then the optional context's tree with '
+@(🐩'😎'345'A'🦓
+The @ Context delimiter
+@(🐩'😎'345'A'🦓@
+and the Host Context
+@(🐩'😎'345'A'🦓@stfu.site
+that can also have an "IRI" (URI, URL) styled path
+@(🐩'😎'345'A'🦓@stfu.site/demo.php/
+or fully formed "IRI" in "UTF"
+@(🐩'😎'345'A'🦓@https://stfu.site/demo.php?x=
+Closed with the ) other containing control symbol
+@(🐩'😎'345'A'🦓@stfu.site)
+
+The "named" Host Context assumes TLD, but can be any system type.
+~(demo'tel'sms)(1'000'000'0000)
+
+
+
+
+
 
 <h2>STFUjs</h2>
  
-STFU's reference Implementation STFUjs @(STFUjs@stfujs.com) handles all of the forms of STFU's Accurate Representation and performs the presentation of your Concepts!
+STFU's reference Implementation STFUjs @(STFUjs@stfujs.com) handles all of the forms of STFU's Accurate Representation using bits and performs the presentation of your Concepts!
 
 Not only can it accurately represent a reference or some concept, STFU also makes sure all of your concepts are presented exactly the way you want them to be!
 
+See the tutorial or reference implementation.
 
 
 
 
+<h1>STFU7 + "STFU8", STFUf, & STFU*</h1>
+STFU: Standard Text Format - Universal provides an effective Standard encoding.
 
-<h3>STFU</h3>
-<h3>STFU</h3>
-<h3>STFU</h3>
-<h3>STFU</h3>
-<h3>STFU</h3>
+The old "UTF8" described a simple method of providing a symbol that is easy to find that aligns the patterns of bits accurately.
 
+STFU uses this pattern and technique to include all of UTF in STFU and also provides other techniques like the scoped and arbitrary length STFU*.
 
+The leading bits signal that if it is an Expander
 
+1 it's an Expander
+11 it's an alignment & count symbol
+10 it's a continuation of included bits
 
+0 is a Control Symbol or a Collection of Bits  (Number)
+01 Control Symbol
+00 Collection of Bits
 
+<H2>Elementary Expanders:</H2>
 
+The Expander uses the leading high "msb" bit and then either a count sequence or the low bit to start included bits, as described by "UTF8".
 
+STFU uses Expanders of any bit length ("8" in "STFU8" (STFU7), "16" in STFUf, and arbitrary in STFU*.
 
-<font size="8in">
-STFU: STANDARD TEXT FORMAT - UNIVERSAL
-</font>
+STFU uses the full range of included bits, 8 Byte chains in STFU8, 16 in STFUf, or the arbitrary sized STFU*.
 
+These include the entire "UTF" "code point" set in values less than 2^2x. (BOM can be included in STFU "text", but certainly not required, and never in STFUf nor STFU* except in "text" in STFU Expanders.)
 
-<pre>
-<H1>Starting Notes:</H1>
+<H2>STFU's Control Symbols:</H2>
+Leading Bits 01 is the STFU Control Symbol.
 
-All numbers are inclusive [0i..5i]
+These have all the information necessary to accurately represent all forms of knowledge and structure.
+
+<H2>Collections of Bits:</H2>
+
+Inside leading bits 00, a collection of bits.
+
+Like the Expander or Control Symbol, these are chained and each bits is part of the sequence.
+
+The values of each bits in STFU8 is 0 to 63i.
+
+<H2>Counting Numbers</H2>
+
+All numbers are inclusive like the included collections of bits  [0i..5i] in STFU7 "STFU8" or [0i..13i] in STFUf
 such as for(i=0;i<=5;i++) or while(i>=0){i--}
 
 Leading (first) bit is most significant.
 
-<H1>Bit Switch:</H1>
+Counts are 0i Inclusive [0 to 0i]
 
-00xxxxxx [0i..5i] "6 bit" Number
-01xxxxxx Control Symbol
-1* Formal ("UTF8" style) Expander
-
----
 <script type="text/javascript">
 
 var x = new Array();
@@ -145,6 +246,8 @@ x[3] = new Array();//#
 x[4] = [
 [[48,10,0],[97,26,10],[65,26,36],[95,1,62],[45,1,63]],
 [
+
+// These are explicitly mapped, not | 2x01
 33,35,36,38,39,40,41,42,43,44,46,47,59,61,63,64,126,10,
 33,39,40,41,42,46,126,10
 ]
@@ -289,7 +392,7 @@ return ss;
 }
 
 function char2bits(s){
-return checkSTFU8(char2utf8(s), 2, 0);
+return " STFU8: " + checkSTFU8(char2utf8(s), 2, 0);
 }
 
 function FormatSTFU8(){} //put this Back into STFU8 Standard Declarations
@@ -297,25 +400,63 @@ function FormatSTFU8(){} //put this Back into STFU8 Standard Declarations
 </script>
 
 
-<H1>All Characters are in Expanders</H1>
+<H2>All Characters are in Expanders.</H2>
 
-ALL "letters" or symbols "character" <= 127
-are encoded in 2-byte Expanders:
+ALL "letters" or symbols "character" are encoded in STFU.
 
-110xxxxx 10xxxxxx
+(These include the old "ascii" <= 127. All of them are encoded in Expanders. Control Symbols are NOT "text". Collections of bits are packed in 00x*)
+
+110xxxxx 10xxxxxx in STFU8
+
+110xxxxx xxxxxxxx  10xxxxxx xxxxxxxx in STFUf
 
 For example: <script>var s = 'a';document.write(s + " or " +  s.charCodeAt(0).toString(2) + " is:" + char2bits(s));</script>
 
 Or letter '0' should actually be zero?
 <script>var s = '0';document.write(s + " or " +  s.charCodeAt(0).toString(2) + " is:" + char2bits(s));</script>
 
-Numbers and some Control Symbols are mapped from "ascii" of the corresponding "character".
-
 Otherwise these aren't  
 <script>var s = "'Numbers'";document.write(s + " :" + char2bits(s));</script>
 
+<H2>STFU in TEXT to STFU Accurately:</H2>
+The simple STFU @(@) Context in text can be converted to Standard STFU easily!
+
+Bits in text are represented as 63i Symbols (from "ascii"). In STFU, bits are packed as bits.
+
+0123456789
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+_-
+
+The "64" Numbers and Control Symbols are mapped from "ascii" of the corresponding "character".
+
+Control Symbols in the text, namely @(') !(') and some others are converted to the more effective STFU when validated.
+
+Everything else, both "UTF" and "ascii", are packed in STFU Expanders.
+
+<H3>...</H3>
+<H3>Fluffy Expander:</H3>
+This "Fluffy" Expander example handles packing and unpacking of the STFU* variable length encoding.
+
+See the STFUjs on how to form or read @(@) Contexts in texts accurately.
+
+
+
+
+
+<H2>...</H2>
+
+
+
+
+
+
+
+
+
+<H1>outdated text</H1>
 ---
-<H1>Expanders & UTF8</H1>
+<H3>Expanders & UTF8</H3>
 
 All 8-bit Byte Expanders are available:
 
@@ -361,7 +502,7 @@ The entire system is based on a Control Symbol (sometimes with a initial time sl
 $(turn'turn)({any})
 With time: $<script>TSixNow();</script>(turn'turn)({any})
 
-In any of these, both the Turns and Slots, a STFU8 or UTF8 "text", a Context @() or !() or a Reference with Associative, an indexed tree ()() and composition, a *() "type" Declaration or a System ~(bits) can be included. A Number can be used as a Turn, as can a STFU8 or UTF8, even a turned reference Context!
+In any of these, both the Turns and Slots, a STFU8 or UTF8 "text", a Context @(@) or !() or a Reference with Associative, an indexed tree ()() and composition, a *() "type" Declaration or a System ~(bits) can be included. A Number can be used as a Turn, as can a STFU8 or UTF8, even a turned reference Context!
 
 Or a set (') of any of them in Slots with or without the Turn index named. [N] if not ()()
 
@@ -450,7 +591,7 @@ Or without time:
 @(Context'tree@host.tld)
 @(Context'tree@host.tld)()
 
-These are the URI IRI URL "file name" or reference. at host.tld's interface, as declared in /@(@host.tld) or /@() ”file" via host.tld
+These are the URI IRI URL "file name" or reference. at host.tld's interface, as declared in "/@(@host.tld)" or "/@()" "file" via host.tld
 
 <!--
 \n
@@ -545,7 +686,7 @@ A local, universal, context, and system table are each required:
 
 The system table is explicitly reserved for host implementations but includes the minimal standards for operation.
 
-The ! Universal Context is well-formed and extensible by any !() or the abbreviated @().
+The ! Universal Context is well-formed and extensible by any !() or the abbreviated @(@).
 
 ALL character encodings including those < 128
 use Expanders of 2 or more octets with high bit set.
@@ -829,7 +970,7 @@ In order for your Concepts and References to be Accurately Represented, you need
 
 This can be loaded and referenced accurately in parallel starting at any point using an expanding tree or linked-list that has offsets.
 
-Because the Control Symbols and Numbers are never STFU8 nor UTF8, they will always be accurate.
+Because the Control Symbols and Numbers are never STFU8 "text" nor UTF8, they will always be accurate.
 
 A \n newline is processed similar to the ' but only between 
 
