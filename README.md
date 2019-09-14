@@ -24,47 +24,94 @@ And any Associative Reference
 
 @(me@mysite.tld)(@(you@your.site.tld)(how))
 
+Within or between any Context.
+
 <h2>STFU*, STFU8 & STFUf</h2>
 STFU is an effective and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
 
+The Packed <b>Standard Text Format - Universal</b> standard includes arbitrary and fixed-scope binary encodings that contain all parts of the STFU Standard accurately.
+
+STFU contains 3 primary parts: Control Symbol Wrappers, Collections of Bits, and STFU Expanders that include the entire Unicode plus the STFU Books of Symbols.
+
 Leading Bits:
 
-00 Control Symbol
-01 Packed Bits
-10 , 11 Expander
+00 Control Symbol Wrap
+01 Packed Collections of Bits
+10 Expander 
+11 Expander Alignment
 
 Regardless of scope or host implementation block size, STFU is an effective and efficient standard for packaging all data in simple fast bit fields of any scope.
 
 Wide parallel test of 
 11... 11... 
-across any bit scope container indicates 
+across any size bit field indicates 
 
 0: Control Symbols present,
 1: Packed Bits or Expanders present,
 
 then a preferential method to isolate each Symbol.
 
-00... Control Symbol
+00... STFU Wraps & Connected Wraps
 01... Packed Bits
 10... Expander Bits
-11... Expander Symbol
+11... Expander Count + Bits
 
-The Control Symbols include seek and size data along with the standard data wrappers, allowing very fast extraction and construction of maps.
+The STFU Connected Wraps can include seek and size data along with the standard STFU Wrappers, allowing very fast extraction and construction of accessors.
 
-Control Symbols, Bits, and Expanders are packed in 
+STFU Wraps, Connected Control Symbols, Bits, and Expanders are packed in 
 
 STFU8 ❌✖️ + 6-bit collection
 STFUf ❌✖️ + 14-bit collection
 STFU* ❌✖️ + any block size - 2b
 
-STFU Control Symbols
-Packed Collections of Bits
-Expanders
+The Expander Alignment uses a count high bits then a low bit.
+
+<h3>STFU Control Symbol Wraps</h3>
+
+The STFU Wraps are "Connected" or singular Wrappers for any of the types of information.
+
+When Connected, STFU Wrappers contain structured information about the Packing technique.
+
+Wrappers can contain any of the Expander, Packed Bits, or more STFU Symbol Wraps.
+
+<h3>Packed Collections of Bits</h3>
+Bits are contained in Packs, combined by spreading them across the scoped containers.
+
+Collections of Bits can be structured, as described by the Declaration you include or by reference in each STFU.
+
+The STFU Control Symbol indicates if they are Parts 1/(2^n) or Wholes (2^n), their alignment inside, and possibly their size.
+
+<h3>Expanders</h3>
+
+Expanders start with the leading bit 1 and are either the Expander Alignment Symbol 11...0... or the Expander Bits 10...
+
+Similar to the old "UTF8", the Expander starts with an indication of how many blocks are included in the Expander Sequence.
+
+The Expander can use any size container of bits, the pattern is the same.
+
+All "characters" including Unicode "UTF" < 2^21, and the BOOKs of STFU Symbols above 2^21 pack in Expanders. 
+
+STFU BOOKs formalize symbols in books of symbol pages of 2^24 each. Intermediate transitional collections ("code points", etc.) are in STFU books between 2^21 (UTF) and 2^24.
+
+Because of STFU*'s arbitrary bit scope, index "characters" go in as many containers as they need and are not larger than scope*(scope-2) bits. There's STFU's Packed Bits ;)
+
+Starting with 
+10... One Container
+110... 2 Containers to
+11...10... A total count of Containers + 10...'s for Each Container
+Of the Container's bit scope's count (full 11...11)
+As needed to hold the index value.
+
+Using the prefixed count 11...10... vs 10... makes finding the Alignment Symbol faster in the Expander Sequence and extracting the index value accurately by bit field spreads or masked bit shifts.
+
+From an Expander Alignment Symbol, counts are sequential, a 10... that's not within the count is another, and truncated by a Packed Bits Container or Control Symbol. 
+
+In STFU8 an "ascii" <= 127 is packed in 2×8-bit: 110.....10...... to not break the old "UTF8".
 
 <h2>STFU BITS</h2>
-The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size.
+The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size or structure complexity.
 
-Leading bit 0 indicates a Differencer
+Leading bit 0 indicates a Differencing
 Leading bit 1 indicates Binary Bits in Blocks
 
 The initiator is a pulse driver select for either
@@ -72,7 +119,7 @@ The initiator is a pulse driver select for either
 0: 2-bit Differencing Symbols with STFU types or
 1: Pulse Driver for initial Block size in Binary bits.
 
-The Binary structure and Differencer can inter-mix and can represent all composites of bit structures.
+The Binary structure and Differencer can inter-mix and can represent all composites of bit structures including each-other.
 
 If the initiator (leading msb bit) is high,
 (signaling initial Blocks of Bits)
@@ -80,7 +127,8 @@ Increment low until next high pulse.
 
 10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
 
-The minimum is a 2-bit initiator that provides
+The minimum is 11, a 2-bit initiator that provides the structure of BITS:
+
 count of Bits in container Block
 count of Multiples of Blocks
 count of Multiples of Multiples
@@ -88,7 +136,7 @@ a Composit of structures
 an extension of Multiples (Dimensions)
 
 <h1>STFU & STFUjs</h1>
-<h2>STFU</h2>
+<h2>STFU <b>Standard Text Format - Universal</b></h2>
 STFU Accurately represents ALL knowledge and conceptualization in a simple and <b>Standard Text Format - Universal</b>.
 
 In any natural language or technical representation, concepts are related to concepts by other concepts...
@@ -148,7 +196,7 @@ Inside any Context,
 
 Symbol ' is used similar to [,] or {,} in either Turns or ()() named/indexed or () unnamed Slots.
 
-() and ()() both use the same symbol because it gets through HTTP correctly. (See below.)
+() and ()() both use the same characters because it gets through HTTP correctly. (See below.)
 
 <h3>@(@)() Associative Reference</h3>
 
@@ -195,7 +243,7 @@ Or with a specific Time:
 
 Or with information:
 
-@(you@your.tld)(~(refs)(1)'(my'type)(s2)'*(@(demo'type@stfu.site))
+@(you@your.tld)((refs)(1)'(my'type)(s2)'*(@(demo'type@stfu.site)))
 
 Or an Associative Reference:
 
@@ -209,19 +257,18 @@ The optional initial Time is very important!
 The @(@)(@(@)(x)) form of Associative Reference makes it easy to separate the @(@)() from other indexed values ()() or (Slots).
 
 <Small>
-A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with (). 
+A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with @(@). 
 
 Always use the correct form.
 
 In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces, apostrophe, and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
-
 Use UTF8 "text" unless it's in a JSON string as \uxxxx.
 
-Use STFU's formatter.
+Use STFU's formatter and STFU Standards.
 
 </Small>
 
-In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced.
+In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced. SEE ABOVE.
 
 
 <h3>@(@)() in Text Examples</h3>
@@ -261,7 +308,7 @@ Not only can it accurately represent a reference or some concept, STFU also make
 
 See the tutorial or reference implementation.
 
-
+Use STFU's Standard Infrastructure.
 
 
 <h1>STFU7 + "STFU8", STFUf, & STFU*</h1>
@@ -278,8 +325,8 @@ The leading bits signal that if it is an Expander
 10 it's a continuation of included bits
 
 0 is a Control Symbol or a Collection of Bits  (Number)
-01 Control Symbol
-00 Collection of Bits
+00 Control Symbol
+01 Collection of Bits
 
 This set, Whatevers 〰️ := 
 {Packed Bits, Control Symbols, Expanders}
@@ -295,37 +342,37 @@ STFU uses the full range of included bits, 8 Byte chains in STFU8, 16 in STFUf, 
 These include the entire "UTF" "code point" set in values less than 2^2x. (BOM can be included in STFU "text", but certainly not required, and never in STFUf nor STFU* except in "text" in STFU Expanders.)
 
 <H2>STFU's Control Symbols:</H2>
-Leading Bits 01 is the STFU Control Symbol.
+Leading Bits 00 is the STFU Control Symbol.
 
-01🤯💡↕️✖️❌✖️
+00🤯💡↕️✖️❌✖️
 
 Or a Wrap:
-01🌑🌕🌑🌑🌑🌑 〰️ 01🌑🌑🌑🌑🌑🌑
+00🌑🌕🌑🌑🌑🌑 〰️ 00🌑🌑🌑🌑🌑🌑
 
 Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3i) and optimized for "STFU8" (STFU7) and the formalized Universal STFUf. ("STFU16")
 
-<H3>01{0,1} Connected Control Symbol 🤯</H3>
+<H3>00{0,1} Connected Control Symbol 🤯</H3>
 
-011 The next in sequence is part of this Control
-010 The next in sequence is NOT part of a Control, it's Wrapped Information!
+001 The next in sequence is part of this Control
+000 The next in sequence is NOT part of a Control, it's your STFU's Wrapped Information!
 
-<H3>01x{0,1} Wrap ON|OFF Condition 💡{🌑,🌕}</H3>
+<H3>00x{0,1} Wrap ON|OFF Condition 💡{🌑,🌕}</H3>
 
-01x1 Wrapper ON 🌕
-01x0 Wrapper OFF 🌑
+00x1 Wrapper ON 🌕
+00x0 Wrapper OFF 🌑
 
 These have all the information necessary to accurately represent all forms of knowledge and structure.
 
-The most simple form is 0101(〰️)0100 indicating Wrapper ON🌕, Wrapper OFF🌑.
+The most simple form is 0001(〰️)0000 indicating Wrapper ON🌕, Wrapper OFF🌑.
 
-010🌕 Whatevers 〰️{Expanders, Control Symbols, Packed Bits} 010🌑
+000🌕 Whatevers 〰️{Expanders, Control Symbols, Packed Bits} 000🌑
 
 The same for Connected Control Symbols:
-01🤯1(〰️)01🤯0 in a Declared structure
+00🤯1(〰️)00🤯0 in a Declared structure
 
 The next symbol could be an unconnected wrapper with Whatevers inside!
 
-01🤯🌕(〰️)01🤯🌑 where the 🌑 OFF Control Symbol may also have stuff inside.
+00🤯🌕(〰️)00🤯🌑 where the 🌑 OFF Control Symbol may also have stuff inside.
 
 ON🌕 and 🌑OFF sequences ALWAYS have matching Symbol type, off can have more stuff in the Connected Control System too! 🤯
 
@@ -340,7 +387,7 @@ STFU3i has the minimal controls for wrappers in 4 bits total but is horribly ine
 -->
 
 <H3>Logical Direction ↕️</H3>
-Leading bit 01xx{0,1} is the Logical Direction
+Leading bit 00xx{0,1} is the Logical Direction
 
 The "5th bit" adds the Logical Direction!
 
@@ -349,11 +396,11 @@ This is applied to all the symbol types.
 <H3>STFU8 Control Symbol Types</H3>
 Based on the Logical Direction, the next 3 bits in sequence tell the type of the Control Symbol.
 
-The Control System types are internal the Declaration structure when leading bits are 011💡 ( a Connected Control Symbol ). 
-01🤯🌕↕️❌✖️✖️〰️〰️〰️01🤯🌑↕️❌✖️✖️
+The Control System types are internal the Declaration structure when leading bits are 001💡 ( a Connected Control Symbol ). 
+00🤯🌕↕️❌✖️✖️〰️〰️〰️00🤯🌑↕️❌✖️✖️
 
 The Control System types are part of the information's Wrapper with ON🌕|OFF🌑 when 
-010🌕↕️❌✖️✖️ 〰️〰️〰️ 010🌑↕️❌✖️✖️
+000🌕↕️❌✖️✖️ 〰️〰️〰️ 000🌑↕️❌✖️✖️
 <b>and are of the matching Control Symbol type!</b>
 
 Some specifics of the value.
@@ -364,7 +411,7 @@ The data is always a Whatever:〰️{Packed Bits, or a STFU Expander 🤪, or an
 
 Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 
-01🤯💡↕️✖️❌✖️
+00🤯💡↕️✖️❌✖️
 
 🌑❌✖️: is Whatevers 〰️{Packed Bits,Control Symbol,Expanders}
 
@@ -411,13 +458,13 @@ There are many ways to use STFU's Connected Control Symbols for more effective.
 
 Seek hints are the most common, such as size of data in the Wrap ( inside 011 to the next 010 ) or offsets in whatever direction or additional structure Declarations. Depth Levels and Slot counts are also common.
 
-01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🤯🌑↕️❌✖️✖️
+00🤯🌕↕️❌✖️✖️(〰️〰️〰️)00🤯🌑↕️❌✖️✖️
 
-01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🌑🌑↕️❌✖️✖️
+00🤯🌕↕️❌✖️✖️(〰️〰️〰️)00🌑🌑↕️❌✖️✖️
 
-01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🌑🌑↕️❌✖️✖️
+00🤯🌕↕️❌✖️✖️(〰️〰️〰️)00🌑🌑↕️❌✖️✖️
 
-01🌑🌕↕️🌑🌑🌑(Actual Information! Use STFU8)01🌑🌑↕️🌑🌑🌑
+00🌑🌕↕️🌑🌑🌑(Actual Information! Use STFU8)00🌑🌑↕️🌑🌑🌑
 
 <H3>🌑🌕</H3>
 //🤯〰️\🤯/〰️〰️〰️\/〰️\\
@@ -425,7 +472,7 @@ Seek hints are the most common, such as size of data in the Wrap ( inside 011 to
 
 <H2>Collections of Bits:</H2>
 
-Inside leading bits 00, a Collection of Bits.
+Inside leading bits 01, a Collection of Bits.
 
 Like the Expander or Control Symbol, these are chained and each Bits is part of the sequence.
 
@@ -899,7 +946,7 @@ The ! Universal Context is well-formed and extensible by any !() or the abbrevia
 ALL character encodings including those < 128
 use Expanders of 2 or more octets with high bit set.
 
-The 64 numbers are 00xxxxxx and mapped to ascii in the initial encodings.
+The 64 numbers are 01xxxxxx in STFU and mapped to ascii in the initial encoding of STFU "text".
 
 The @(@) Context is a combination of the context tree and the supporting "named" host.
 
@@ -966,7 +1013,7 @@ In any level, the ()((local'data)(value))
 
 Or as a set of Slots:
 
-()((local'data)(value)'RAW '(STFU8'UTF8)' in 2 octets or 10xxxxxxs '(local'STFU8'data'4)(value)'etc8s)
+()((local'data)(value)'RAW '(STFU8'UTF8)' in 2×8b or 10xxxxxxs '(local'STFU8'data'4)(value)'etc8s)
 
 The @(@) Context and !() are the same way:
 
