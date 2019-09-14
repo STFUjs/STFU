@@ -4,19 +4,88 @@ STFU(0)
 
 
 <hr>
-
+<pre>
 <font size="8in">
 STFU: STANDARD TEXT FORMAT - UNIVERSAL
 </font>
-
-
-<pre>
 
 <H1>STFU: STFUjs, STFU7 + "STFU8", STFUf, & STFU*</H1>
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
 STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation.
+
+<h2>STFU in Text</h2>
+STFU is an effective and efficient standard for Referencing any STFU Universal Context,
+
+@(you@your.site.tld)
+
+And any Associative Reference
+
+@(me@mysite.tld)(@(you@your.site.tld)(how))
+
+<h2>STFU*, STFU8 & STFUf</h2>
+STFU is an effective and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
+
+Leading Bits:
+
+00 Control Symbol
+01 Packed Bits
+10 , 11 Expander
+
+Regardless of scope or host implementation block size, STFU is an effective and efficient standard for packaging all data in simple fast bit fields of any scope.
+
+Wide parallel test of 
+11... 11... 
+across any bit scope container indicates 
+
+0: Control Symbols present,
+1: Packed Bits or Expanders present,
+
+then a preferential method to isolate each Symbol.
+
+00... Control Symbol
+01... Packed Bits
+10... Expander Bits
+11... Expander Symbol
+
+The Control Symbols include seek and size data along with the standard data wrappers, allowing very fast extraction and construction of maps.
+
+Control Symbols, Bits, and Expanders are packed in 
+
+STFU8 ❌✖️ + 6-bit collection
+STFUf ❌✖️ + 14-bit collection
+STFU* ❌✖️ + any block size - 2b
+
+STFU Control Symbols
+Packed Collections of Bits
+Expanders
+
+<h2>STFU BITS</h2>
+The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size.
+
+Leading bit 0 indicates a Differencer
+Leading bit 1 indicates Binary Bits in Blocks
+
+The initiator is a pulse driver select for either
+
+0: 2-bit Differencing Symbols with STFU types or
+1: Pulse Driver for initial Block size in Binary bits.
+
+The Binary structure and Differencer can inter-mix and can represent all composites of bit structures.
+
+If the initiator (leading msb bit) is high,
+(signaling initial Blocks of Bits)
+Increment low until next high pulse.
+
+10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
+
+The minimum is a 2-bit initiator that provides
+count of Bits in container Block
+count of Multiples of Blocks
+count of Multiples of Multiples
+a Composit of structures
+an extension of Multiples (Dimensions)
 
 <h1>STFU & STFUjs</h1>
 <h2>STFU</h2>
