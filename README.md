@@ -30,6 +30,8 @@ Most natural languages, be them spoken or written or graphical or gesture, lack 
 
 STFU combines all these requirements for Accurate Representation into one <b>effective</b> form!
 
+STFU's STFU7 + "STFU8", STFUf, & STFU* are exhaustive formal standards.
+
 <h2>STFU in ANY Text</h2>
 Most communication uses some form of text or structure, STFU can be used anywhere!
 
@@ -208,7 +210,10 @@ The leading bits signal that if it is an Expander
 01 Control Symbol
 00 Collection of Bits
 
-<H2>Elementary Expanders:</H2>
+This set, Whatevers 〰️ := 
+{Packed Bits, Control Symbols, Expanders}
+
+<H2>Elementary Expanders: 🤪</H2>
 
 The Expander uses the leading high "msb" bit and then either a count sequence or the low bit to start included bits, as described by "UTF8".
 
@@ -221,15 +226,111 @@ These include the entire "UTF" "code point" set in values less than 2^2x. (BOM c
 <H2>STFU's Control Symbols:</H2>
 Leading Bits 01 is the STFU Control Symbol.
 
+Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3i) and optimized for "STFU8" (STFU7) and the formalized Universal STFUf. ("STFU16")
+
+<H3>01{0,1} Connected Control Symbol 🤯</H3>
+
+011 The next in sequence is part of this Control
+010 The next in sequence is NOT part of a Control, it's data!
+
+<H3>01x{0,1} Wrap ON|OFF Condition 💡{🌑,🌕}</H3>
+01x1 Wrapper ON 🌕
+01x0 Wrapper OFF 🌑
+
 These have all the information necessary to accurately represent all forms of knowledge and structure.
+
+The most simple form is 0101(🤪)0100 indicating Wrapper ON🌕, Wrapper OFF🌑.
+
+010🌕 Whatevers 〰️{Expander, Control Symbol, Packed Bits} 010🌑
+
+The same for Connected Control Symbols:
+01🤯1(〰️)0100 in a Declared structure
+
+01🤯🌕(〰️)01🤯🌑 where the 🌑 OFF Control Symbol may also have stuff inside.
+
+ON🌕 and 🌑OFF sequences ALWAYS have matching Symbol type, off can have more stuff in the Connected Control System too! 🤯
+
+The next 3i "4 bits" of STFU8 have Logical Direction and types too!
+
+<!--
+<H3>"STFU4": STFU3i Control Symbols</H3>
+
+Starting with STFU4's "2 bit" Control Symbols,
+
+STFU3i has the minimal controls for wrappers in 4 bits total but is horribly inefficient for more than a few bits.
+-->
+
+<H3>Logical Direction ↕️</H3>
+Leading bit 01xx{0,1} is the Logical Direction
+
+The "5th bit" adds the Logical Direction!
+
+This is applied to all the symbol types.
+
+<H3>STFU8 Control Symbol Types</H3>
+Based on the Logical Direction, the next 3 bits in sequence tell the type of the Control Symbol.
+
+The Control System types are internal the Declaration structure when leading bits are 011💡 ( a Connected Control Symbol ). 
+01🤯🌕↕️xxx〰️〰️〰️01🤯🌑↕️xxx
+
+The Control System types are part of the information's Wrapper with ON🌕|OFF🌑 when 
+010🌕↕️xxx 〰️〰️〰️ 010🌑↕️xxx
+<b>and are of the matching Control Symbol type!</b>
+
+Some specifics of the value.
+
+Because the included information is prefixed by its Logical Direction, it is either {less or more} or {inside or outside} or {Parts or Wholes}
+
+The data is always a Whatever:〰️{Packed Bits, or a STFU Expander 🤪, or another Control Symbol}, formal.
+
+Bits: {0,1} from Logical Direction indicator is {less,more}:
+
+01🤯💡↕️xxx
+
+🌑xx: is Whatevers 〰️{Packed Bits,Control Symbol,Expanders}
+
+000: {Single Whatevers 〰️{Bits,Control Symbol,Expanders}, } 
+
+: {Count of Bits, Iterator Multiples} structures
+
+: {Depth, Turn of Index}
+: {Count, Slots of Information}
+
+: {Parts, Wholes} of Bits such as fractional 1/(2^n) or 2^n
+: {Differencing, binary 2^} of Bits
+
+🌕xx: Declarations and Composits
+
+111: Declaration: {definition is inside, Reference a Declaration}
+
+
+
+<H3>Connected Control Symbols</H3>
+
+The sequence of controls, when connected, provides definitions of any diversity of structure.
+
+Each structure Declaration can have Index Turns or Slot Values and any combination of Control Symbol types.
+
+There are many ways to use STFU's Connected Control Symbols for more effective.
+
+Seek hints are the most common, such as size of data in the Wrap ( inside 011 to the next 010 ) or offsets in whatever direction or additional structure Declarations. Depth Levels and Slot counts are also common.
+
+01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx
+
+01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx 01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx
+
+<H3>🌑🌕</H3>
+//🤯〰️\🤯/〰️〰️〰️\\
 
 <H2>Collections of Bits:</H2>
 
-Inside leading bits 00, a collection of bits.
+Inside leading bits 00, a Collection of Bits.
 
-Like the Expander or Control Symbol, these are chained and each bits is part of the sequence.
+Like the Expander or Control Symbol, these are chained and each Bits is part of the sequence.
 
-The values of each bits in STFU8 is 0 to 63i.
+The values of each bits in STFU8 is 0 to 63i. 5i "6 bits" each.
+
+Based on the Control Symbol Type, these Bits can be Wholes or Parts (integer, fraction), have a leading or scoped Container alignment, or be a Differencing (equal Halfs) or binary 2^n Accumulation.
 
 <H2>Counting Numbers</H2>
 
@@ -238,7 +339,7 @@ such as for(i=0;i<=5;i++) or while(i>=0){i--}
 
 Leading (first) bit is most significant.
 
-Counts are 0i Inclusive [0 to 0i]
+Counts are 0i Inclusive [0 to 0i] iterator.
 
 <script type="text/javascript">
 
