@@ -58,6 +58,8 @@ This is the parts "Entity Context" [at] "Host Context"
 
 The Host Context has its own STFU Context @(@host.tld) that's inside the Universal Context.
 
+@(@me.site.tld) is the preferred Entity Context
+
 The Host Context can be implicit @(this'part) inside some "text", but the fully formed @(demo'this'part@stfu.site) is preferred.
 
 A Context exists at any level of the Universe.
@@ -142,11 +144,11 @@ A short form @u@host.tld can be found as well, it is always contiguous but break
 
 Always use the correct form.
 
-In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
+In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces, apostrophe, and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
 
 Use UTF8 "text" unless it's in a JSON string as \uxxxx.
 
-Use STFU's reader.
+Use STFU's formatter.
 
 </Small>
 
@@ -215,7 +217,7 @@ This set, Whatevers 〰️ :=
 
 <H2>Elementary Expanders: 🤪</H2>
 
-The Expander uses the leading high "msb" bit and then either a count sequence or the low bit to start included bits, as described by "UTF8".
+The Expander uses the leading high "msb" bit and then either a count sequence or the low bit to start included bits, as described initially by "UTF8" but with the full scope utilized.
 
 STFU uses Expanders of any bit length ("8" in "STFU8" (STFU7), "16" in STFUf, and arbitrary in STFU*.
 
@@ -236,26 +238,29 @@ Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3
 <H3>01{0,1} Connected Control Symbol 🤯</H3>
 
 011 The next in sequence is part of this Control
-010 The next in sequence is NOT part of a Control, it's data!
+010 The next in sequence is NOT part of a Control, it's Wrapped Information!
 
 <H3>01x{0,1} Wrap ON|OFF Condition 💡{🌑,🌕}</H3>
+
 01x1 Wrapper ON 🌕
 01x0 Wrapper OFF 🌑
 
 These have all the information necessary to accurately represent all forms of knowledge and structure.
 
-The most simple form is 0101(🤪)0100 indicating Wrapper ON🌕, Wrapper OFF🌑.
+The most simple form is 0101(〰️)0100 indicating Wrapper ON🌕, Wrapper OFF🌑.
 
-010🌕 Whatevers 〰️{Expander, Control Symbol, Packed Bits} 010🌑
+010🌕 Whatevers 〰️{Expanders, Control Symbols, Packed Bits} 010🌑
 
 The same for Connected Control Symbols:
-01🤯1(〰️)0100 in a Declared structure
+01🤯1(〰️)01🤯0 in a Declared structure
+
+The next symbol could be an unconnected wrapper with Whatevers inside!
 
 01🤯🌕(〰️)01🤯🌑 where the 🌑 OFF Control Symbol may also have stuff inside.
 
 ON🌕 and 🌑OFF sequences ALWAYS have matching Symbol type, off can have more stuff in the Connected Control System too! 🤯
 
-The next 3i "4 bits" of STFU8 have Logical Direction and types too!
+The next 3i "4 bits" of STFU8 have ↕️ Logical Direction and types too!
 
 <!--
 <H3>"STFU4": STFU3i Control Symbols</H3>
@@ -276,10 +281,10 @@ This is applied to all the symbol types.
 Based on the Logical Direction, the next 3 bits in sequence tell the type of the Control Symbol.
 
 The Control System types are internal the Declaration structure when leading bits are 011💡 ( a Connected Control Symbol ). 
-01🤯🌕↕️xxx〰️〰️〰️01🤯🌑↕️xxx
+01🤯🌕↕️❌✖️✖️〰️〰️〰️01🤯🌑↕️❌✖️✖️
 
 The Control System types are part of the information's Wrapper with ON🌕|OFF🌑 when 
-010🌕↕️xxx 〰️〰️〰️ 010🌑↕️xxx
+010🌕↕️❌✖️✖️ 〰️〰️〰️ 010🌑↕️❌✖️✖️
 <b>and are of the matching Control Symbol type!</b>
 
 Some specifics of the value.
@@ -288,27 +293,44 @@ Because the included information is prefixed by its Logical Direction, it is eit
 
 The data is always a Whatever:〰️{Packed Bits, or a STFU Expander 🤪, or another Control Symbol}, formal.
 
-Bits: {0,1} from Logical Direction indicator is {less,more}:
+Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 
-01🤯💡↕️xxx
+01🤯💡↕️✖️❌✖️
 
-🌑xx: is Whatevers 〰️{Packed Bits,Control Symbol,Expanders}
+🌑❌✖️: is Whatevers 〰️{Packed Bits,Control Symbol,Expanders}
 
-000: {Single Whatevers 〰️{Bits,Control Symbol,Expanders}, } 
+🌑🌑✖️: Whatevers 〰️
+🌑🌕✖️: Bits & Iterator Multiples
 
-: {Count of Bits, Iterator Multiples} structures
-
-: {Depth, Turn of Index}
-: {Count, Slots of Information}
-
-: {Parts, Wholes} of Bits such as fractional 1/(2^n) or 2^n
-: {Differencing, binary 2^} of Bits
-
-🌕xx: Declarations and Composits
-
-111: Declaration: {definition is inside, Reference a Declaration}
+🌑🌑🌑: ↕️{ Whatevers 〰️{Bits,Control Symbols,Expanders}, }
+🌑🌑🌕: ↕️{Turn of Index, Slots of Information} Any Whatevers 〰️
+🌑🌕🌑: ↕️{Count of Single Bits, Iterator:Multiples} bits & bit structures Compositor
+🌑🌕🌕: ↕️{Parts, Wholes} of Bits such as fractional 1/(2^n) or 2^n
+: {Differencing Halfs, binary 2^ Accumulation} of Bits
 
 
+🌕❌✖️: STFU Declarations and Composits
+Includes the Control Symbol's Types in Connected Control Symbols
+
+The set of STFU's standards includes the
+↕️{Local, Universal} Context
+
+STFU Declaration: {definition is inside, Reference a Declaration} ↕️{STFU Declaration}
+STFU Representation "show" and logic "true"
+↕️{STFU Reference with STFU Associative} local and Universal
+STFU References + Associative
+
+🌕🌑✖️: 
+🌕🌕✖️: 
+
+🌕🌑🌑: 
+🌕🌑🌕: 
+🌕🌕🌑: 
+🌕🌕🌕: (Extensions in STFUf)
+
+The STFU's Accurate Representation Declaration is included as it is complete.
+
+Formally Declared STFU Expanders (such as logic and control pages in STFU Books) can be the Symbol's Whatevers.
 
 <H3>Connected Control Symbols</H3>
 
@@ -320,12 +342,17 @@ There are many ways to use STFU's Connected Control Symbols for more effective.
 
 Seek hints are the most common, such as size of data in the Wrap ( inside 011 to the next 010 ) or offsets in whatever direction or additional structure Declarations. Depth Levels and Slot counts are also common.
 
-01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx
+01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🤯🌑↕️❌✖️✖️
 
-01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx 01🤯🌕↕️xxx(〰️〰️〰️)01🤯🌑↕️xxx
+01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🌑🌑↕️❌✖️✖️
+
+01🤯🌕↕️❌✖️✖️(〰️〰️〰️)01🌑🌑↕️❌✖️✖️
+
+01🌑🌕↕️🌑🌑🌑(Actual Information! Use STFU8)01🌑🌑↕️🌑🌑🌑
 
 <H3>🌑🌕</H3>
-//🤯〰️\🤯/〰️〰️〰️\\
+//🤯〰️\🤯/〰️〰️〰️\/〰️\\
+
 
 <H2>Collections of Bits:</H2>
 
