@@ -226,6 +226,11 @@ These include the entire "UTF" "code point" set in values less than 2^2x. (BOM c
 <H2>STFU's Control Symbols:</H2>
 Leading Bits 01 is the STFU Control Symbol.
 
+01🤯💡↕️✖️❌✖️
+
+Or a Wrap:
+01🌑🌕🌑🌑🌑🌑 〰️ 01🌑🌑🌑🌑🌑🌑
+
 Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3i) and optimized for "STFU8" (STFU7) and the formalized Universal STFUf. ("STFU16")
 
 <H3>01{0,1} Connected Control Symbol 🤯</H3>
