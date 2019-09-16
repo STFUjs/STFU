@@ -137,41 +137,7 @@ All "characters" are in Expanders.
 
 In STFU8 an "ascii" <= 127 is packed in 2×8-bit: 110.....10...... to not break the old "UTF8".
 
-<h2>STFU BITS in STFUx</h2>
-The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size or structure complexity.
 
-STFU BITS are usually a separate Collection of Bits ("file") but can be included in STFUx(*).
-
-Leading bit 0 indicates a 2-bit Differencing
-Leading bit 1 indicates Binary Bits in Blocks
-
-The initiator is a pulse driver select for either
-
-0: 2-bit Differencing Symbols with STFU types or
-1: Pulse Driver for initial Block size in Binary bits.
-
-The structure of bits in STFU BITS has STFU types.
-
-The Binary structure and Differencer can inter-mix and can represent all composites of bit structures including each-other.
-
-If the initiator (leading msb bit) is high,
-(signaling the initial Block of Bits)
-Increment low until next high pulse.
-
-10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
-
-The minimum is bits 11, a 2-bit initiator that provides the structure of BITS in an 8-bit structure.:
-
-The initiator indicates the Count of the Counts of Multiples and the count of compositions.
-
-For example:
-count of Bits in container Block
-count of Multiples of Blocks
-count of Multiples of Multiples
-a Composit of structures
-an extension of Multiples (Dimensions) or Declared types.
-
-A STFU Declaration and external collection of associated BITS is preferred over STFUx more than some blocks long.
 
 <h1>STFU & STFUjs</h1>
 <h2>STFU <b>Standard Text Format - Universal</b></h2>
@@ -359,10 +325,10 @@ STFU uses this pattern and technique to include all of UTF in STFU and also prov
 The leading bits signal that if it is an Expander
 
 1 it's an Expander
-11 it's an alignment & count symbol
+11 it's an Expander Alignment & count Symbol
 10 it's a continuation of included bits
 
-0 is a Control Symbol or a Collection of Bits  (Number)
+0 is a Control Symbol or a Collection of Bits
 00 Control Symbol
 01 Collection of Bits
 
@@ -463,7 +429,7 @@ Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 🌑🌕🌑: ↕️{Count of Single Bits, Iterator:Multiples} bits & bit structures Compositor
 🌑🌕🌕: ↕️{Parts, Wholes} of Bits or 〰️ such as fractional 1/(2^n) or 2^n
 
-Implementation includes STFU LINE with an accessable "line" of bits or "outgoing" "line" of bits. Typically "wire" interfaces in the implementation, the Universal cache of STFU's, or the Declared Profile for the BALL CUBE FLOW and SHOW. See 00🤯💡🌕🌑🌑🌑
+
 
 🌕❌✖️: STFU Declarations and Composits
 Includes the Wrap Symbol's Types in both Connected Control Symbols and actual data.
@@ -490,13 +456,16 @@ STFU References + Associative
 🌕🌑🌑: STFU Reference + Associatives @(@)() {inside, Universal ( or @() empty ) }
 🌕🌑🌕: STFU Declaration or Means of Representation (include select parts) {contained inside, include Universal STFU @(@)() ( or @() empty ) }
 🌕🌕🌑: STFUx {inside full blocks of Structured STFU BITS, full blocks of "RAW" bits ***} must include size in blocks.
-🌕🌕🌕: {,}
+🌕🌕🌕: Flow & Lines of Bits {lines of bits,lines to bits}
 
 The STFU's Accurate Representation Declaration is included as it is complete.
 
 Formally Declared STFU Expanders (such as logic and control pages in STFU Books) can be the Symbol's Whatevers.
 
 *** STFUx must be processed in a very different way.
+
+Implementation includes STFU LINE with an accessable "line" of bits or "outgoing" "line" to bits. Typically "wire" interfaces in the implementation, the Universal cache of STFU's, or the Declared Profile for the BALL CUBE FLOW and SHOW. See 00🤯💡🌕🌑🌑🌑
+
 
 <H3>Connected Control Symbols</H3>
 
@@ -533,6 +502,82 @@ The values of each bits in STFU8 is 0 to 63i. 5i "6 bits" each.
 Based on the Control Symbol Type, these Bits can be Wholes or Parts (integer, fraction), have a leading or scoped Container alignment, or be a Differencing (equal Halfs) or binary 2^n Accumulation.
 
 For efficiency, Collections of Bits are packed 00xx* and can be bit field spread or shifted sequentially. "STFU8" is 00xxxxxx "6-bit" each, 4×6=24b.
+
+
+<h2>STFU BITS, LINE & STFUx "raw" bits, "line"</h2>
+The standard form BITS is the most effective structure for containing formed collections of bits regardless of bin size or structure complexity. (Hint: 5i)
+
+Inline raw bits are tolerated only with the sequentially loaded STFUx(*) that includes size in blocks.
+
+Other Collections of Bits are welcomed by "line" that have a fully Declared STFU Declaration!
+
+STFU BITS are usually a separate Collection of Bits as an accessable "line" available by "line" (/"file") but can be included in-line in STFUx(*).
+
+<h3>STFU BITS</H3>
+A fully formed Collection of Bits with a driven header that indicates its structure.
+
+Leading bit 0 indicates a 2-bit Differencing
+Leading bit 1 indicates Binary Bits in Blocks
+
+The initiator is a pulse driver select for either
+
+0: 2-bit Differencing Symbols with STFU types or
+1: Pulse Driver for initial Block size in Binary bits.
+
+The structure of bits in STFU BITS has STFU types.
+
+The Binary structure and Differencer can inter-mix and can represent all composites of bit structures including each-other.
+
+If the initiator (leading msb bit) is high,
+(signaling the initial Block of Bits)
+Increment low until next high pulse.
+
+10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
+
+The minimum is bits 11, a 2-bit initiator that provides the structure of BITS in an 8-bit structure.:
+
+The initiator indicates the Count of the Counts of Multiples and the count of compositions.
+
+For example:
+count of Bits in container Block
+count of Multiples of Blocks
+count of Multiples of Multiples
+a Composit of structures
+an extension of Multiples (Dimensions) or Declared types.
+
+<h3>STFUx In-Line raw bits</H3>
+Yucky.
+
+A STFU Declaration and external collection of associated BITS is preferred over STFUx more than some blocks long.
+
+Any STFUx(*) must be processed sequentially and must include size in blocks in the Wrap.
+
+<h3>STFU LINE</H3>
+STFU's Implementation has "lines" of accessable bits available by "lines".
+
+Each cache of STFU data is available by the STFU FLOW that controls the implementation. Only the minimal interface is required, set&get bits in one simple implementation. (The implementation can offer options like add registers or ... )
+
+References throughout the Universal Context ... Exist. Making Accurate Representation of them requires A "cube", a "ball", truth "true", a "show", and a "flow".
+
+<h2>LINE & FLOW</H2>
+
+To Accurately Represent the Concepts of ANY STFU Context throughout the Universal Context, STFU uses the most simple way:
+
+Get & Set Bits!
+
+A "line" of "bits" is both the bits in an accessable form and the "line" of them.
+
+{Line of Bits, get&set}
+
+<h3>Implementation Layers</h3>
+
+The cached STFU is not changed, an accessor layer is built in a parallel plane and typically has an offset in the container per Wrap and a accessable buffer for bits (Wrap values, Packed Bits, Expanders) that are extracted from the STFU Packing.
+
+
+
+
+
+
 
 <H2>Counting Numbers</H2>
 
