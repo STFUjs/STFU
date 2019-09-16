@@ -1,5 +1,11 @@
 
+
 STFU(0)
+
+
+
+
+
 <hr>
 
 
@@ -9,11 +15,15 @@ STFU(0)
 STFU: STANDARD TEXT FORMAT - UNIVERSAL
 </font>
 
-<H1>STFU: STFUjs, STFU7 + "STFU8", STFUf, & STFU*</H1>
+<H1>STFU: STFU* + STFUjs, STFU(7): "STFU8", STFU(f), & STFUx</H1>
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
-STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation.
+STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using bits and provides instructions for the elementary processing of bits for Accurate Representation of Concepts.
+
+STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Contexts that include presenting any diversity of Representations and perform any capability using bits.
+
+STFU is a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU* including STFU(7) "STFU8" and STFU(f), and a standard formal Collections of Bits. Etc.
 
 <h2>STFU in Text</h2>
 STFU is an effective and efficient standard for Referencing any STFU Universal Context,
@@ -26,8 +36,10 @@ And any Associative Reference
 
 Within or between any Context.
 
-<h2>STFU*, STFU8 & STFUf</h2>
-STFU is an effective and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
+STFU provides an Accurate Means of Representation, direct control of ~(bits), and a Declaration of Structure with *(@(@)) inside!
+
+<h2>STFU*, STFU(7) & STFU(f), STFUx(*)</h2>
+STFU is an <b>effective</b> and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
 
 The Packed <b>Standard Text Format - Universal</b> standard includes arbitrary and fixed-scope binary encodings that contain all parts of the STFU Standard accurately.
 
@@ -70,9 +82,11 @@ The Expander Alignment uses a count high bits then a low bit.
 
 The STFU Wraps are "Connected" or singular Wrappers for any of the types of information.
 
-When Connected, STFU Wrappers contain structured information about the Packing technique.
+When Connected, STFU Wrappers contain structured information about the Packing technique and wrapped data.
 
-Wrappers can contain any of the Expander, Packed Bits, or more STFU Symbol Wraps.
+Wrappers can contain any of the Expander, Packed Bits, or more STFU Symbol Wraps. (Only STFUx of any scope allows raw bits.)
+
+The Control Wraps include the elemental requirements for Accurate Representation, including Universal Context References, Means of Representation & Declaration of Structure, Logical Direction and Turns & Slots, and technical specifics.
 
 <h3>Packed Collections of Bits</h3>
 Bits are contained in Packs, combined by spreading them across the scoped containers.
@@ -104,20 +118,24 @@ As needed to hold the index value.
 
 Using the prefixed count 11...10... vs 10... makes finding the Alignment Symbol faster in the Expander Sequence and extracting the index value accurately by bit field spreads or masked bit shifts.
 
-From an Expander Alignment Symbol, counts are sequential, a 10... that's not within the count is another, and truncated by a Packed Bits Container or Control Symbol. 
+From an Expander Alignment Symbol, counts are sequential, a 10... that's not within the count is another, the sequence truncated by a Packed Bits Container or Wrap Control Symbol. xx
+
+All "characters" are in Expanders.
 
 In STFU8 an "ascii" <= 127 is packed in 2×8-bit: 110.....10...... to not break the old "UTF8".
 
 <h2>STFU BITS</h2>
 The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size or structure complexity.
 
-Leading bit 0 indicates a Differencing
+Leading bit 0 indicates a 2-bit Differencing
 Leading bit 1 indicates Binary Bits in Blocks
 
 The initiator is a pulse driver select for either
 
 0: 2-bit Differencing Symbols with STFU types or
 1: Pulse Driver for initial Block size in Binary bits.
+
+The structure of bits in STFU BITS has STFU types.
 
 The Binary structure and Differencer can inter-mix and can represent all composites of bit structures including each-other.
 
@@ -127,13 +145,15 @@ Increment low until next high pulse.
 
 10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
 
-The minimum is 11, a 2-bit initiator that provides the structure of BITS:
+The minimum is 11, a 2-bit initiator that provides the structure of BITS in an 8-bit structure.:
 
 count of Bits in container Block
 count of Multiples of Blocks
 count of Multiples of Multiples
 a Composit of structures
 an extension of Multiples (Dimensions)
+
+A STFU Declaration and associated BITS is preferred over STFUx.
 
 <h1>STFU & STFUjs</h1>
 <h2>STFU <b>Standard Text Format - Universal</b></h2>
@@ -147,7 +167,7 @@ Most natural languages, be them spoken or written or graphical or gesture, lack 
 
 STFU combines all these requirements for Accurate Representation into one <b>effective</b> form!
 
-STFU's STFU7 + "STFU8", STFUf, & STFU* are exhaustive formal standards.
+STFU's STFU7 + "STFU8", STFUf, & STFU* (and STFUx) are exhaustive formal standards.
 
 <h2>STFU in ANY Text</h2>
 Most communication uses some form of text or structure, STFU can be used anywhere!
@@ -197,6 +217,8 @@ Inside any Context,
 Symbol ' is used similar to [,] or {,} in either Turns or ()() named/indexed or () unnamed Slots.
 
 () and ()() both use the same characters because it gets through HTTP correctly. (See below.)
+
+The Universal Context !()() is formally structured and includes all of @(@).
 
 <h3>@(@)() Associative Reference</h3>
 
@@ -268,7 +290,7 @@ Use STFU's formatter and STFU Standards.
 
 </Small>
 
-In STFU7 & STFU8, STFUf, or the binary STFU*, Contexts are more exactly referenced. SEE ABOVE.
+In STFU7 & STFU8, STFUf, and the binary STFU* + STFUx, Contexts are more exactly referenced. SEE STFU8.
 
 
 <h3>@(@)() in Text Examples</h3>
@@ -296,10 +318,6 @@ The "named" Host Context assumes TLD, but can be any system type.
 ~(demo'tel'sms)(1'000'000'0000)
 
 
-
-
-
-
 <h2>STFUjs</h2>
  
 STFU's reference Implementation STFUjs @(STFUjs@stfujs.com) handles all of the forms of STFU's Accurate Representation using bits and performs the presentation of your Concepts!
@@ -311,7 +329,7 @@ See the tutorial or reference implementation.
 Use STFU's Standard Infrastructure.
 
 
-<h1>STFU7 + "STFU8", STFUf, & STFU*</h1>
+<h1>STFU(7) + "STFU8", STFU(f), & STFU(*) + STFUx</h1>
 STFU: Standard Text Format - Universal provides an effective Standard encoding.
 
 The old "UTF8" described a simple method of providing a symbol that is easy to find that aligns the patterns of bits accurately.
@@ -349,7 +367,7 @@ Leading Bits 00 is the STFU Control Symbol.
 Or a Wrap:
 00🌑🌕🌑🌑🌑🌑 〰️ 00🌑🌑🌑🌑🌑🌑
 
-Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3i) and optimized for "STFU8" (STFU7) and the formalized Universal STFUf. ("STFU16")
+Like the Expanders, STFU's Control Symbols are arbitrary in scope >= "4 bits" (3i) and optimized for "STFU8" STFU(7) and the formalized Universal STFU(f). ("STFU16")
 
 <H3>00{0,1} Connected Control Symbol 🤯</H3>
 
@@ -376,7 +394,7 @@ The next symbol could be an unconnected wrapper with Whatevers inside!
 
 ON🌕 and 🌑OFF sequences ALWAYS have matching Symbol type, off can have more stuff in the Connected Control System too! 🤯
 
-The next 3i "4 bits" of STFU8 have ↕️ Logical Direction and types too!
+The next 3i "4 bits" of "STFU8" have ↕️ Logical Direction and types too!
 
 <!--
 <H3>"STFU4": STFU3i Control Symbols</H3>
@@ -409,44 +427,55 @@ Because the included information is prefixed by its Logical Direction, it is eit
 
 The data is always a Whatever:〰️{Packed Bits, or a STFU Expander 🤪, or another Control Symbol}, formal.
 
+Most of the data in connected control symbols is for line control and signaling or efficiency of processing, content sequences in time, same or  prior and later versions, wire and line (communication) specifics, and other parts of the Declaration.
+
 Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 
 00🤯💡↕️✖️❌✖️
 
 🌑❌✖️: is Whatevers 〰️{Packed Bits,Control Symbol,Expanders}
 
-🌑🌑✖️: Whatevers 〰️
-🌑🌕✖️: Bits & Iterator Multiples
+🌑🌑✖️: Whatevers 〰️ + Bits & Iterator Multiples
+🌑🌕✖️: Turns & Slots + Parts & Wholes
 
-🌑🌑🌑: ↕️{ Whatevers 〰️{Bits,Control Symbols,Expanders}, }
+🌑🌑🌑: ↕️{ Whatevers 〰️{Bits,Control Symbols,Expanders}, Implementation }
 🌑🌑🌕: ↕️{Turn of Index, Slots of Information} Any Whatevers 〰️
 🌑🌕🌑: ↕️{Count of Single Bits, Iterator:Multiples} bits & bit structures Compositor
-🌑🌕🌕: ↕️{Parts, Wholes} of Bits such as fractional 1/(2^n) or 2^n
-: {Differencing Halfs, binary 2^ Accumulation} of Bits
+🌑🌕🌕: ↕️{Parts, Wholes} of Bits or 〰️ such as fractional 1/(2^n) or 2^n
 
 
 🌕❌✖️: STFU Declarations and Composits
-Includes the Control Symbol's Types in Connected Control Symbols
+Includes the Wrap Symbol's Types in both Connected Control Symbols and actual data.
+
+🌕❌✖️: {Local Reference Inside, Universal Context Reference or local @()}
 
 The set of STFU's standards includes the
-↕️{Local, Universal} Context
-
-STFU Declaration: {definition is inside, Reference a Declaration} ↕️{STFU Declaration}
-STFU Representation "show" and logic "true"
 ↕️{STFU Reference with STFU Associative} local and Universal
+
+Using the Connected Wrap's Control Symbols, the local or referenced STFU Declaration or Means of Representation, etc.
+
+<!--
+STFU Declaration: {definition is inside, Reference another Declaration} ↕️{STFU Declaration}
+STFU Representation "show" and logic "true"
 STFU References + Associative
 
+: {Differencing Halfs, binary 2^ Accumulation} of Bits are 01 without other 
+-->
+
+↕️{Local, Universal} Context:
 🌕🌑✖️: 
 🌕🌕✖️: 
 
-🌕🌑🌑: 
-🌕🌑🌕: 
-🌕🌕🌑: 
-🌕🌕🌕: (Extensions in STFUf)
+🌕🌑🌑: STFU Reference + Associatives
+🌕🌑🌕: STFU Declaration or Means of Representation (include select parts) {contained inside, include Universal STFU or local @()}
+🌕🌕🌑: {Structured STFUx BITS, Raw STFUx BITS ***}
+🌕🌕🌕: (Extensions in STFU)
 
 The STFU's Accurate Representation Declaration is included as it is complete.
 
 Formally Declared STFU Expanders (such as logic and control pages in STFU Books) can be the Symbol's Whatevers.
+
+*** STFUx must be processed in a very different way.
 
 <H3>Connected Control Symbols</H3>
 
@@ -465,6 +494,8 @@ Seek hints are the most common, such as size of data in the Wrap ( inside 011 to
 00🤯🌕↕️❌✖️✖️(〰️〰️〰️)00🌑🌑↕️❌✖️✖️
 
 00🌑🌕↕️🌑🌑🌑(Actual Information! Use STFU8)00🌑🌑↕️🌑🌑🌑
+
+STFUx allows Wraps with raw binary data but requires size and offset and requires a Wrap-sequential processing of offsets, explicitly not parallel.
 
 <H3>🌑🌕</H3>
 //🤯〰️\🤯/〰️〰️〰️\/〰️\\
@@ -701,12 +732,55 @@ See the STFUjs on how to form or read @(@) Contexts in texts accurately.
 
 <H2>...</H2>
 
+<H2>...</H2>
+<H2>...</H2>
+<H2>...</H2>
 
 
 
+<h3>Bits in Headers</h3>
+<small>
+As a courtesy, STFU can include "STFU(*)" headers and sometimes prefixes files with "UTF8" BOM. (Never "UTF16")
 
+The size of the Wraps, Packed Bits, Expander, and STFUx blocks
+is indicated with a 63i ascii text header.
 
+STFU(0) is UTF8/ascii "text", the leading bytes are: efbbef0a535456552830290a0a0a0a0a
+The STFU is "text" @(@) or !()() in 8-bit bytes.
 
+STFU* (including "STFU8") is <b>formally structured</b> and exhaustive:
+
+The first 16 bytes indicate the scope of the symbol, padded with 0x0a \n.
+
+In any scope STFU*, the header and size is "STFU( )" with the value in 63i max 4×63i ascii in "()".
+
+Any STFU* including "STFU8" STFU(7) or "STFU16" STFU(f) first 16 bytes *can* be
+STFU(7):
+efbbef0a535456552837290a0a0a0a0a
+BOM\nSTFU(7)\n\n\n\n\n
+or
+STFU(f):
+0a0a0a0a5354565528662928xxxx290a
+\n\n\n\nSTFU(f)\n\n\n\n\n
+
+STFU Arbitrary bit scope STFU({scope in 63i to ×4})
+\ef\bb\ef\nSTFU(7)\n\n\n\n\n in "STFU8"
+\n\n\n\nSTFU(f)\n\n\n\n\n in "STFU16"
+STFU(u or v?)\n\n\n\n\n 31i "32-bit"
+STFU(-)\n\n\n\n\n 63i "64-bit"
+STFU(1-)\n\n\n\n 127i "128-bit"
+STFU(----)\n\n typical max 64^4 = 2^24 bit scope.
+
+Never STFU(-----)\n is irrational 63i^4i 1 billion bits or 134 MBytes each "character".
+
+STFUx(7) is intentionally misaligned to force the correct process.
+efbbef0a53545655782837290a0a0a0a
+
+STFUx(----)\n allows raw binary content within a control Wrap but requires sequential offset processing in the first iteration, NOT parallel. For example STFUx(--) w/ {2×63i=4k bits} block size in bits, but the first wrap is 512 bytes...
+
+STFUx() contains raw bits and shall not be incorrectly read.
+
+</small>
 
 
 <H1>outdated text</H1>
