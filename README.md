@@ -15,7 +15,7 @@ STFU(0)
 STFU: STANDARD TEXT FORMAT - UNIVERSAL
 </font>
 
-<H1>STFU: STFU* + STFUjs, STFU(7): "STFU8", STFU(f), & STFUx</H1>
+<H1>STFU: STFU(*) + STFUjs, "STFU8": STFU(7), STFU(f), & STFUx</H1>
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
@@ -23,10 +23,14 @@ STFU has a variety of matching formats that Accurately Represent all forms of co
 
 STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Contexts that include presenting any diversity of Representations and perform any capability using bits.
 
-STFU is a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU* including STFU(7) "STFU8" and STFU(f), and a standard formal Collections of Bits. Etc.
+STFU is a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU* including the optimized STFU(7) "STFU8" and STFU(f), and a standard formal Collections of Bits. Etc.
 
-<h2>STFU in Text</h2>
-STFU is an effective and efficient standard for Referencing any STFU Universal Context,
+STFU: Standard Text Format - Universal is referenced by a variable bit scope, STFU(0) is "text", STFU(*) is arbitrary, and STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
+
+All hardware and "software" implementations shall be un-encumbered.
+
+<h2>STFU(0) in Text</h2>
+STFU is an <b>effective</b> and efficient standard for Referencing any STFU Universal Context and Representing it correctly.
 
 @(you@your.site.tld)
 
@@ -36,14 +40,18 @@ And any Associative Reference
 
 Within or between any Context.
 
-STFU provides an Accurate Means of Representation, direct control of ~(bits), and a Declaration of Structure with *(@(@)) inside!
+STFU provides an Accurate Means of Representation, direct control of ~(bits), and Declarations of Structure *(@(@)) or ~(type) inside!
 
-<h2>STFU*, STFU(7) & STFU(f), STFUx(*)</h2>
+<h2>STFU(*), STFU(7) & STFU(f), & STFUx(*)</h2>
 STFU is an <b>effective</b> and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
 
-The Packed <b>Standard Text Format - Universal</b> standard includes arbitrary and fixed-scope binary encodings that contain all parts of the STFU Standard accurately.
+STFU "text" STFU(0) includes the complete STFU Standard in "UTF" or "ascii" formats including encodings like json, and has both a @(@)() Context and Universal !()() form.
 
-STFU contains 3 primary parts: Control Symbol Wrappers, Collections of Bits, and STFU Expanders that include the entire Unicode plus the STFU Books of Symbols.
+STFU(0) is optimized to pass through HTTP and text encodings while retaining the syntax. ( @(@)() is double ()'s because HTTP.)
+
+The Packed <b>STFU(*): Standard Text Format - Universal</b> standard includes arbitrary and fixed-scope binary encodings that contain all parts of the STFU Standard accurately, optimized for "STFU8": STFU(7).
+
+STFU contains 3 primary parts: STFU Control Symbol Wrappers, Collections of Bits, and STFU Expanders that include the entire Unicode plus the STFU Books of Symbols.
 
 Leading Bits:
 
@@ -54,7 +62,7 @@ Leading Bits:
 
 Regardless of scope or host implementation block size, STFU is an effective and efficient standard for packaging all data in simple fast bit fields of any scope.
 
-Wide parallel test of 
+Efficient wide parallel tests of 
 11... 11... 
 across any size bit field indicates 
 
@@ -68,19 +76,22 @@ then a preferential method to isolate each Symbol.
 10... Expander Bits
 11... Expander Count + Bits
 
-The STFU Connected Wraps can include seek and size data along with the standard STFU Wrappers, allowing very fast extraction and construction of accessors.
+The STFU Connected Wraps can include seek and size data along with the standard STFU Wrappers, allowing very fast extraction of information and construction of accessors.
 
 STFU Wraps, Connected Control Symbols, Bits, and Expanders are packed in 
 
-STFU8 ❌✖️ + 6-bit collection
-STFUf ❌✖️ + 14-bit collection
-STFU* ❌✖️ + any block size - 2b
+STFU(7) ❌✖️ + 6-bit collection
+STFU(f) ❌✖️ + 14-bit collection
+STFU(*) ❌✖️ + any block size - 2b
 
-The Expander Alignment uses a count high bits then a low bit.
+The Expander Alignment Symbol uses a count high bits then a low bit.
 
 <h3>STFU Control Symbol Wraps</h3>
+STFU Wraps provide a complete structure to hold and identify the information.
 
-The STFU Wraps are "Connected" or singular Wrappers for any of the types of information.
+The leading bits of a STFU Wrap are 00.
+
+The STFU Wraps are "Connected" or singular "Information" Wrappers for any of the types of information.
 
 When Connected, STFU Wrappers contain structured information about the Packing technique and wrapped data.
 
@@ -91,9 +102,11 @@ The Control Wraps include the elemental requirements for Accurate Representation
 <h3>Packed Collections of Bits</h3>
 Bits are contained in Packs, combined by spreading them across the scoped containers.
 
+The Collections of Bits are packed with leading bits 01.
+
 Collections of Bits can be structured, as described by the Declaration you include or by reference in each STFU.
 
-The STFU Control Symbol indicates if they are Parts 1/(2^n) or Wholes (2^n), their alignment inside, and possibly their size.
+The STFU Control Symbol indicates if they are Parts 1/(2^n) or Wholes (2^n), their alignment inside, and possibly their size and Compositions.
 
 <h3>Expanders</h3>
 
@@ -103,22 +116,22 @@ Similar to the old "UTF8", the Expander starts with an indication of how many bl
 
 The Expander can use any size container of bits, the pattern is the same.
 
-All "characters" including Unicode "UTF" < 2^21, and the BOOKs of STFU Symbols above 2^21 pack in Expanders. 
+All "characters" including Unicode "UTF" < 2^21, and the BOOKs of STFU Symbols above 2^21 are Packed in Expanders. 
 
 STFU BOOKs formalize symbols in books of symbol pages of 2^24 each. Intermediate transitional collections ("code points", etc.) are in STFU books between 2^21 (UTF) and 2^24.
 
-Because of STFU*'s arbitrary bit scope, index "characters" go in as many containers as they need and are not larger than scope*(scope-2) bits. There's STFU's Packed Bits ;)
+Because of STFU*'s arbitrary bit scope, "characters" go in as many containers as they need though not larger than scope*(scope-2) bits. There's STFU's Packed Bits ;)
 
 Starting with 
 10... One Container
 110... 2 Containers to
 11...10... A total count of Containers + 10...'s for Each Container
-Of the Container's bit scope's count (full 11...11)
+of the Container's bit scope's count (full 11...11)
 As needed to hold the index value.
 
 Using the prefixed count 11...10... vs 10... makes finding the Alignment Symbol faster in the Expander Sequence and extracting the index value accurately by bit field spreads or masked bit shifts.
 
-From an Expander Alignment Symbol, counts are sequential, a 10... that's not within the count is another, the sequence truncated by a Packed Bits Container or Wrap Control Symbol. xx
+From an Expander Alignment Symbol, counts are sequential, a 10... that's not within the count is another, the sequence truncated by another Expander Alignment Symbol or Wrap Control Symbol.
 
 All "characters" are in Expanders.
 
@@ -126,6 +139,8 @@ In STFU8 an "ascii" <= 127 is packed in 2×8-bit: 110.....10...... to not break 
 
 <h2>STFU BITS</h2>
 The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size or structure complexity.
+
+STFU BITS are usually a separate Collection of Bits ("file") but can be included in STFUx(*).
 
 Leading bit 0 indicates a 2-bit Differencing
 Leading bit 1 indicates Binary Bits in Blocks
@@ -140,20 +155,23 @@ The structure of bits in STFU BITS has STFU types.
 The Binary structure and Differencer can inter-mix and can represent all composites of bit structures including each-other.
 
 If the initiator (leading msb bit) is high,
-(signaling initial Blocks of Bits)
+(signaling the initial Block of Bits)
 Increment low until next high pulse.
 
 10000001 signifies "8-bit" symbol, 0 to 7 iterations Inclusive.
 
-The minimum is 11, a 2-bit initiator that provides the structure of BITS in an 8-bit structure.:
+The minimum is bits 11, a 2-bit initiator that provides the structure of BITS in an 8-bit structure.:
 
+The initiator indicates the Count of the Counts of Multiples and the count of compositions.
+
+For example:
 count of Bits in container Block
 count of Multiples of Blocks
 count of Multiples of Multiples
 a Composit of structures
-an extension of Multiples (Dimensions)
+an extension of Multiples (Dimensions) or Declared types.
 
-A STFU Declaration and associated BITS is preferred over STFUx.
+A STFU Declaration and external collection of associated BITS is preferred over STFUx.
 
 <h1>STFU & STFUjs</h1>
 <h2>STFU <b>Standard Text Format - Universal</b></h2>
@@ -167,7 +185,7 @@ Most natural languages, be them spoken or written or graphical or gesture, lack 
 
 STFU combines all these requirements for Accurate Representation into one <b>effective</b> form!
 
-STFU's STFU7 + "STFU8", STFUf, & STFU* (and STFUx) are exhaustive formal standards.
+STFU's STFU(7) + "STFU8", STFU(f), & STFU(*), (and STFUx) are exhaustive formal standards.
 
 <h2>STFU in ANY Text</h2>
 Most communication uses some form of text or structure, STFU can be used anywhere!
@@ -181,7 +199,7 @@ Most communication uses some form of text or structure, STFU can be used anywher
 
 Every @(@) Context is inside the the Universal Tree. In the more sophisticated !()(), the structure is more explicit.
 
-<h3>STFU's General Form: @(@) Context</h3>
+<h3>STFU's General Form: @(@)() Context</h3>
 
 STFU uses one standard form, an indicator Symbol with a Set of Turns ("path") and a Set of Slots (information).
 
@@ -218,7 +236,7 @@ Symbol ' is used similar to [,] or {,} in either Turns or ()() named/indexed or 
 
 () and ()() both use the same characters because it gets through HTTP correctly. (See below.)
 
-The Universal Context !()() is formally structured and includes all of @(@).
+The Universal Context !()() is formally structured and includes all of @(@)().
 
 <h3>@(@)() Associative Reference</h3>
 
@@ -238,7 +256,7 @@ This Inter-Associative Reference is available anywhere, inside the same Context 
 
 The Associative Reference can be a simple text or collection of bits or a Declaration.
 
-@(@)(@(@)(*(demo'refs@stfu.site)'(how)(345))
+@(@)(@(@)(*(demo'refs@stfu.site)'(types'how)(345))
 
 
 <h2>@(@)(@(@)()) The Universe, Referenced</h2>
@@ -276,28 +294,30 @@ Combined:
 
 The optional initial Time is very important!
 
-The @(@)(@(@)(x)) form of Associative Reference makes it easy to separate the @(@)() from other indexed values ()() or (Slots).
+The @(@)(@(@)(x)) form of Associative Reference makes it easy to separate the Context Reference @(@)() from other indexed values ()() or (Slots) inside.
+
+Internal Turns are indicated by .() Wrap: @T1m3rS(me.(my'name)@my.tld) in that STFU.
 
 <Small>
-A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with @(@). 
+A short form @u@host.tld can be found as well, it is always contiguous but breaks quoted whitespace and control characters. Wrap it with @(@) correctly. 
 
 Always use the correct form.
 
-In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character or "Quoted Turns including UTF", spaces, apostrophe, and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
+In STFU in Text (or JSON, etc) the Index Turns are the 63i "6-bit" "ascii numbers" each character, UTF8, or "Quoted Turns including UTF", spaces, apostrophe, and whitespace are not inside the () unless quoted. The Numbers are 0..9a..zA..Z_- so you can cheat with "ascii" symbols and punycode can be included in @(@xn-stfu.tld) without encoding. The only quote mark is "double-quote" %2  (NEVER "UTF16" except in js quotes.)
 Use UTF8 "text" unless it's in a JSON string as \uxxxx.
 
 Use STFU's formatter and STFU Standards.
 
 </Small>
 
-In STFU7 & STFU8, STFUf, and the binary STFU* + STFUx, Contexts are more exactly referenced. SEE STFU8.
+In STFU(7) & "STFU8", STFU(f), and the binary STFU(*) + STFUx(*), Contexts are more exactly referenced. SEE "STFU8".
 
 
 <h3>@(@)() in Text Examples</h3>
 
 The @(@) Context Reference in ANY Text is a combination of the Context Tree and the supporting "named" Host Context.
 
-@(@) in text is a "UTF" string or 6-bit number as "ascii" (or null) indicating the primary context,
+@(@) in text is a "UTF" string or 6-bit number as "ascii" (or empty) indicating the primary context,
 
 Context:
 @(🐩
@@ -314,7 +334,7 @@ or fully formed "IRI" in "UTF"
 Closed with the ) other containing control symbol
 @(🐩'😎'345'A'🦓@stfu.site)
 
-The "named" Host Context assumes TLD, but can be any system type.
+The "named" Host Context assumes TLD in UTF, but can be any system type.
 ~(demo'tel'sms)(1'000'000'0000)
 
 
@@ -353,11 +373,11 @@ This set, Whatevers 〰️ :=
 
 The Expander uses the leading high "msb" bit and then either a count sequence or the low bit to start included bits, as described initially by "UTF8" but with the full scope utilized.
 
-STFU uses Expanders of any bit length ("8" in "STFU8" (STFU7), "16" in STFUf, and arbitrary in STFU*.
+STFU uses Expanders of any bit length ("8" in "STFU8" ( STFU(7) ), "16" in STFU(f), and arbitrary in STFU(*).
 
-STFU uses the full range of included bits, 8 Byte chains in STFU8, 16 in STFUf, or the arbitrary sized STFU*.
+STFU uses the full range of included bits, 8 Byte chains in STFU(7), 16 in STFU(f), or the size of the arbitrarily sized STFU*.
 
-These include the entire "UTF" "code point" set in values less than 2^2x. (BOM can be included in STFU "text", but certainly not required, and never in STFUf nor STFU* except in "text" in STFU Expanders.)
+These include the entire "UTF" "code point" set in values less than 2^2x. (BOM can be included in STFU "text", but certainly not required, and never in STFU(f) nor STFU(*) except inside "text" inside STFU Expanders.)
 
 <H2>STFU's Control Symbols:</H2>
 Leading Bits 00 is the STFU Control Symbol.
@@ -411,7 +431,7 @@ The "5th bit" adds the Logical Direction!
 
 This is applied to all the symbol types.
 
-<H3>STFU8 Control Symbol Types</H3>
+<H3>"STFU8" Control Symbol Types</H3>
 Based on the Logical Direction, the next 3 bits in sequence tell the type of the Control Symbol.
 
 The Control System types are internal the Declaration structure when leading bits are 001💡 ( a Connected Control Symbol ). 
@@ -425,9 +445,9 @@ Some specifics of the value.
 
 Because the included information is prefixed by its Logical Direction, it is either {less or more} or {inside or outside} or {Parts or Wholes}
 
-The data is always a Whatever:〰️{Packed Bits, or a STFU Expander 🤪, or another Control Symbol}, formal.
+The data is always a Whatever:〰️{Packed Bits, a STFU Expander 🤪, another Control Symbol, or empty}, formal.
 
-Most of the data in connected control symbols is for line control and signaling or efficiency of processing, content sequences in time, same or  prior and later versions, wire and line (communication) specifics, and other parts of the Declaration.
+Most of the data in connected control symbols is for line control and signaling or efficiency of processing, content sequences in time, same or prior and later versions, wire and line (communication) specifics, and other parts of the Declaration. Wraps can be empty, allowing additional structure.
 
 Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 
@@ -466,9 +486,9 @@ STFU References + Associative
 🌕🌑✖️: 
 🌕🌕✖️: 
 
-🌕🌑🌑: STFU Reference + Associatives
-🌕🌑🌕: STFU Declaration or Means of Representation (include select parts) {contained inside, include Universal STFU or local @()}
-🌕🌕🌑: {Structured STFUx BITS, Raw STFUx BITS ***}
+🌕🌑🌑: STFU Reference + Associatives @(@)() {inside, Universal ( or @() empty ) }
+🌕🌑🌕: STFU Declaration or Means of Representation (include select parts) {contained inside, include Universal STFU @(@)() ( or @() empty ) }
+🌕🌕🌑: STFUx {inside raw Structured STFU BITS, outside raw or STFU BITS bits ***}
 🌕🌕🌕: (Extensions in STFU)
 
 The STFU's Accurate Representation Declaration is included as it is complete.
@@ -498,7 +518,7 @@ Seek hints are the most common, such as size of data in the Wrap ( inside 011 to
 STFUx allows Wraps with raw binary data but requires size and offset and requires a Wrap-sequential processing of offsets, explicitly not parallel.
 
 <H3>🌑🌕</H3>
-//🤯〰️\🤯/〰️〰️〰️\/〰️\\
+//🤯〰️\🤯/〰️〰️〰️\/〰️Whatevers〰️\\
 
 
 <H2>Collections of Bits:</H2>
@@ -511,14 +531,16 @@ The values of each bits in STFU8 is 0 to 63i. 5i "6 bits" each.
 
 Based on the Control Symbol Type, these Bits can be Wholes or Parts (integer, fraction), have a leading or scoped Container alignment, or be a Differencing (equal Halfs) or binary 2^n Accumulation.
 
+For efficiency, Collections of Bits are packed 00xx* and can be bit field spread or shifted sequentially. "STFU8" is 00xxxxxx "6-bit" each, 4×6=24b.
+
 <H2>Counting Numbers</H2>
 
-All numbers are inclusive like the included collections of bits  [0i..5i] in STFU7 "STFU8" or [0i..13i] in STFUf
+All numbers are inclusive like the included collections of bits  [0i..5i] in STFU(7) "STFU8" or [0i..13i] in STFU(f)
 such as for(i=0;i<=5;i++) or while(i>=0){i--}
 
 Leading (first) bit is most significant.
 
-Counts are 0i Inclusive [0 to 0i] iterator.
+Counts are 0i Inclusive [0 to 0i] iterator. ( Except the header "STFU(0)" for "text" )
 
 <script type="text/javascript">
 
