@@ -137,7 +137,7 @@ All "characters" are in Expanders.
 
 In STFU8 an "ascii" <= 127 is packed in 2×8-bit: 110.....10...... to not break the old "UTF8".
 
-<h2>STFU BITS</h2>
+<h2>STFU BITS in STFUx</h2>
 The standard form BITS is the optimal structure for containing formed collections of bits regardless of bin size or structure complexity.
 
 STFU BITS are usually a separate Collection of Bits ("file") but can be included in STFUx(*).
@@ -171,7 +171,7 @@ count of Multiples of Multiples
 a Composit of structures
 an extension of Multiples (Dimensions) or Declared types.
 
-A STFU Declaration and external collection of associated BITS is preferred over STFUx.
+A STFU Declaration and external collection of associated BITS is preferred over STFUx more than some blocks long.
 
 <h1>STFU & STFUjs</h1>
 <h2>STFU <b>Standard Text Format - Universal</b></h2>
@@ -458,11 +458,12 @@ Bits: ↕️{0,1} from Logical Direction indicator is {less,more}:
 🌑🌑✖️: Whatevers 〰️ + Bits & Iterator Multiples
 🌑🌕✖️: Turns & Slots + Parts & Wholes
 
-🌑🌑🌑: ↕️{ Whatevers 〰️{Bits,Control Symbols,Expanders}, Implementation }
+🌑🌑🌑: ↕️{ Whatevers 〰️{Bits,Control Symbols,Expanders}, Implementation "cube" "ball" "true" "show" & "flow"}
 🌑🌑🌕: ↕️{Turn of Index, Slots of Information} Any Whatevers 〰️
 🌑🌕🌑: ↕️{Count of Single Bits, Iterator:Multiples} bits & bit structures Compositor
 🌑🌕🌕: ↕️{Parts, Wholes} of Bits or 〰️ such as fractional 1/(2^n) or 2^n
 
+Implementation includes STFU LINE with an accessable "line" of bits or "outgoing" "line" of bits. Typically "wire" interfaces in the implementation, the Universal cache of STFU's, or the Declared Profile for the BALL CUBE FLOW and SHOW. See 00🤯💡🌕🌑🌑🌑
 
 🌕❌✖️: STFU Declarations and Composits
 Includes the Wrap Symbol's Types in both Connected Control Symbols and actual data.
@@ -488,8 +489,8 @@ STFU References + Associative
 
 🌕🌑🌑: STFU Reference + Associatives @(@)() {inside, Universal ( or @() empty ) }
 🌕🌑🌕: STFU Declaration or Means of Representation (include select parts) {contained inside, include Universal STFU @(@)() ( or @() empty ) }
-🌕🌕🌑: STFUx {inside raw Structured STFU BITS, outside raw or STFU BITS bits ***}
-🌕🌕🌕: (Extensions in STFU)
+🌕🌕🌑: STFUx {inside full blocks of Structured STFU BITS, full blocks of "RAW" bits ***} must include size in blocks.
+🌕🌕🌕: {,}
 
 The STFU's Accurate Representation Declaration is included as it is complete.
 
@@ -752,13 +753,82 @@ See the STFUjs on how to form or read @(@) Contexts in texts accurately.
 
 
 
-<H2>...</H2>
+<H2>"STFU8" & Infrastructures</H2>
+Because STFU is fully wrapped and structured, STFU(7) & STFU(f) are ideal to optimise infrastructures.
+<H3>DNS</H3>
+STFU as DNS goes far beyond the UTF encodings, as @(@)() Universal Contexts frequently use the DNS for Host Context.
+
+Starting with intermediate STFU(0) "text" in Expanders, STFU(0) contains all of the labels in Expanders but keeps the delimiting '.' outside as the token.
+
+More optimal: "STFU8" ( and STFU(*) )
+
+STFU(7) "STFU8" is ideally suited for infrastructure DNS as it includes the Unicode or "ascii" <B>entirely in Expanders</B> and uses STFU Wraps to fully structure the DNS record.
+
+Both the DNS request and response information is identical, allowing for the query to be populated selectively or to include the full record.
+
+Short STFU Wraps with raw bits provide the fastest copy of structured bits to line for sequences of blocks.
+
+There is no ambiguous data, STFU DNS is fully structured and part of the Universal Contex Tree.
+
+<H3>STFU LINE & WIRE</H3>
+LINE Protocol is both the technique of accessing a "line" of bits and the "line" of bits, from any direction.
+
+STFU LINE & WIRE are part of the minimal implementation and facilitate access and direction of bits to anywhere.
+
+This provides the complete capacity to put bits on lines and access the bits anywhere in the "line" of bits.
+
+<H3>HTTP & IRI (URI, URL, etc. )</H3>
+STFU is the fastest, most effective, and most accurate method of indicating a heirchial tree, path, syntax, or keyed structure.
+
+With STFU as DNS, STFU or custom Collections of Bits can be accessed with absolute certainty over or replacing IRI protocols.
+
+<H3> Email</H3>
+Similar to DNS, Email address components are fully contained in STFU Expanders, including "ascii" inside. Wrapped pairs using STFU contain all the header structures accurately.
+
+<H3></H3>
+
+<H3></H3>
+
+
+
+
+<H2>STFU Infrastructure</H2>
+
+Protect lines, protected storage, rdma slice & multi-ack, validation examples.
 
 <H2>...</H2>
-<H2>...</H2>
-<H2>...</H2>
+<H2>FAULT</H2>
 
+exists?
+wholes reversed bit order in 01 to length?
+bits as numbers are differencers, not 2^n
+UTF .. 01 bits ... UTF without wrap structure
+Wraps in text without text wraps, <i>wrapped text /\ /with\ stuff</i>
+fully populated off connected efficiency gains
+Implementation set of (none) or more, 
+Option to densely or minimally wrap /...\ //\/...\ or //...\\ *n
+Offset size pointer
+!(n) references merge
+(n)(stuff) can [] many
+Local cube & ball anywhere
+Ref \.. up is wrap down /\
+UNLESS line request or unspecified bits populate
+exists?
+references to peers /\/n\
 
+Append validation
+Text Expanders vs Wrap processing priority?
+
+BUFFER SPACE 11...10... or /\ or 010 or ...?
+Null keys with connected control offsets
+
+Extended number as /f//w\/f\\,/\,/\,\ Parts or Slots
+
+Flow to cube & show ball's not-this-context-level 
+***unordered inclusions merge.
+append & rank sequential cascade
+
+Flow helper from implementations over flow bits × truth × flow.
 
 <h3>Bits in Headers</h3>
 <small>
