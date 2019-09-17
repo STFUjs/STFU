@@ -19,24 +19,132 @@ STFU: STANDARD TEXT FORMAT - UNIVERSAL
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
-STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using bits and provides instructions for the elementary processing of bits for Accurate Representation of Concepts.
+STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using Wraps of Information and Infrastructures (bits) and provides standards for the elementary processing of "Lines" of bits for Accurate Representation of Concepts in STFU.
 
-STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Contexts that include presenting any diversity of Representations and perform any capability using bits.
+STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Universal Contexts that includes the presenting any diversity of Representations and to perform any capability using STFU.
 
-STFU has a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU(*) including the optimized STFU(7) "STFU8" and formalised STFU(f) "STFU16", and a standard Control System Tree with Expanders, Wraps, and Collections of Bits. Etc.
+STFU has a standard "text" form that uses @(@) & !()() Universal Context References in "UTF8"/"ascii" & "HTTP".
 
-STFU: Standard Text Format - Universal uses a variable bit scope, STFU(0) in "text", STFU(*) is arbitrary, and STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
+STFU has an arbitrary bit scope STFU(*) that includes the optimized STFU(7) sometimes called "STFU8" and the formalised STFU(f) "STFU16" that all have the same standard Connectedness Tree with Expanders, Packed Collections of Bits, Wraps of Information, and Infrastructures.
 
-All hardware and "software" implementations shall be un-encumbered.
+STFU: Standard Text Format - Universal uses a variable bit scope, STFU(0) in "text", STFU(*) is arbitrary, and "8-bit" STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
 
-<h2>Bit Tree of Connectedness</h2>
-Leading bits:
+All hardware and "software" implementations shall be un-encumbered. Formal.
 
+<h1>Tree of Connectedness</h1>
+
+STFU is Standard.
+
+<h1>Leading Symbols (bits) in a Block:</h1>
+
+Bits are Symbols with high & low value:
 {1:🌕,0:🌑}
 
-🌕: 1: Expanders, STFU Books including UTF Code Pages/Points
-🌕🌕: 11: Expander Alignment & Count Symbol
+The first 3i "4" whole symbols (bits) of the Block provide the Connectedness Tree and signify what each is.
+
+<h2>STFU Expander:</h2>
+
+🌕: 01: STFU Expander.
+
+<h3>Expander: Alignment, Count, Bits</h3>
+
+🌕: 1: Expander, STFU Books (including all UTF Code Pages/Code Points)
+🌕🌕: 11: Expander Alignment & Count (incl. Bits)
 🌕🌑: 10: Expander Bits
+
+The Expander includes a Alignment marker with an increment of blocks to the number of bits in the Block truncated by a low bit 0 and possibly the leading bits of the internal value.
+
+The Expander Alignment's increment count includes that first Block. 10: is Bits in the Expander.
+
+<h2>Packed Collections:</h2>
+
+🌑🌕: 01: Packed Collections of Bits.
+
+Similar to the Expander's bits, the Packed Collections of Bits are all the bits in the Block trailing the leading bits 01: Collections of Bits in the Tree of Connectedness.
+
+Each Block of Packed Bits is "2" 1i bits less count than the bit scope of a Block.
+
+Packed Bits are sequential in Blocks.
+
+In "STFU8": STFU(7), 00xxxxxx are the 5i "6" bits. Implementations might use a masked bit field or shift when representing them as a LINE.
+
+<h2>Wraps or Infrastructures:</h2>
+
+<font size=+2 color=red>Dont like this. Connectedness first.</font>
+
+
+🌑🌑: 00: Wraps or Infrastructures
+
+The third bit, 2i, of the Connectedness Tree, signifies if it is a Wrap or a Infrastructure.
+
+<h3>STFU Wraps:</h3>
+
+🌑🌑🌕: 001: Wrap
+
+A Wrap formal
+
+<h3>STFU Infrastructure:</h3>
+
+A Infrastructure has Lines of Bits.
+
+🌑🌑🌑: 000: Infrastructure
+
+<h2>Connected Inclusion:</h2>
+Structural data used in the formal implementation is included in the Wrap and Infrastructure:
+
+The fourth bit 3i indicates Connectedness or Inclusion.
+
+<h3>Connected Wraps of Information:</h3>
+
+STFU Technical information is contained in the Inclusion.
+
+If it is a Wrap, the fourth 3i bit indicates an Inclusion:
+
+🌑🌑🌕🌕: 0011: Wrap Inclusion Indicator
+🌑🌑🌕🌑: 0010: Wrap Information Indicator
+
+<h3>Infrastructure LINE & bits:</h3>
+
+If it is a Infrastructure, the fourth bit selects the Line.
+
+🌑🌑🌑🌕: 0001: Infrastructure LINE 🌕 ("active" Lines of Bits)
+🌑🌑🌑🌑: 0000: Infrastructure LINE 🌑 ("Banked" Lines of Bits)
+
+<h1>Logical Direction:</h1>
+
+After the "4" bits in the Tree of Connectedness, each consequent bit and any more bits in the arbitrary scope STFU indicate the Logical Directions of each Turn.
+
+In "STFU8": STFU(7), there are "4" 3i more bits in the Block.
+
+Each Indication of Logical Direction, Turns in the Implementation, refined the Resolver.
+
+{🌑: ,🌕: }
+
+<h2>Indicated Direction:</h2>
+
+<h3>Wraps of Information: {ON,OFF}</h3>
+
+If it is a Wrap, the fifth 4i bit indicates ON or OFF.
+
+🌑🌑🌕❌ 🌕: 001x 1: Wrap ON Indicator
+🌑🌑🌕❌ 🌑: 001x 0: Wrap OFF Indicator
+
+<h3>Infrastructure LINE & bits:</h3>
+
+The Available and Banked ("cached") LINEs of Bits
+
+🌑🌑🌑🌕 🌕: 0001 1: Infrastructure LINE 🌕🌕 Implementation & Controls
+🌑🌑🌑🌕 🌑: 0001 0: Infrastructure LINE 🌕🌑 Active Lines (Containers of Bits)
+
+🌑🌑🌑🌑: 0000: "Banked" LINEs of Bits.
+
+
+
+
+
+🌑🌑🌑🌑 🌕: 0000 1: Infrastructure LINE 🌑🌕 "Banked" (Containers of Bits) & Controls
+🌑🌑🌑🌑 🌑: 0000 0: Infrastructure LINE 🌑🌑 "Banked" (Containers of Bits) & raw bits
+
 
 <big>fierce debate</big>
 🌑🌕: 01: Wraps & Infrastructure Symbols
@@ -75,6 +183,8 @@ Logical Directions:
 The sequence of bits signals if each blocks are connected.
 
 Logical Direction separates each sequence in the Implementation's bit tree.
+
+-->
 
 <h2>STFU(0) in Text</h2>
 STFU is an <b>effective</b> and efficient standard for Referencing any STFU Universal Context and Representing it correctly.
