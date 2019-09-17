@@ -23,11 +23,58 @@ STFU has a variety of matching formats that Accurately Represent all forms of co
 
 STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Contexts that include presenting any diversity of Representations and perform any capability using bits.
 
-STFU is a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU* including the optimized STFU(7) "STFU8" and STFU(f), and a standard formal Collections of Bits. Etc.
+STFU has a standard "text" form that uses @(@) & !()() Universal Context References in UTF8/"ascii", and is an arbitrary bit scope STFU(*) including the optimized STFU(7) "STFU8" and formalised STFU(f) "STFU16", and a standard Control System Tree with Expanders, Wraps, and Collections of Bits. Etc.
 
-STFU: Standard Text Format - Universal is referenced by a variable bit scope, STFU(0) is "text", STFU(*) is arbitrary, and STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
+STFU: Standard Text Format - Universal uses a variable bit scope, STFU(0) in "text", STFU(*) is arbitrary, and STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
 
 All hardware and "software" implementations shall be un-encumbered.
+
+<h2>Bit Tree of Connectedness</h2>
+Leading bits:
+
+{1:🌕,0:🌑}
+
+🌕: 1: Expanders, STFU Books including UTF Code Pages/Points
+🌕🌕: 11: Expander Alignment & Count Symbol
+🌕🌑: 10: Expander Bits
+
+<big>fierce debate</big>
+🌑🌕: 01: Wraps & Infrastructure Symbols
+🌑🌑: 00: Bits
+🌑🌕🌕: Wraps of Information
+🌑🌕🌑: Infrastructure Control Symbols
+
+🌑🌕🌕🌕: 0111: Wrap ON
+🌑🌑🌕🌑: 0010: Wrap OFF
+
+Logical Directions:
+{🌑: inside,🌕: outside}
+{🌑: Parts,🌕: Wholes}
+{🌑: single,🌕: Multiples}
+{🌑: Turns,🌕: Slots}
+{🌑: Count of Bits,🌕: Composition}
+{🌑: Reference,🌕: Inclusion}
+{🌑: Declaration,🌕: FLOW}
+{🌑: LINE of Bits,🌕: LINE to Bits}
+
+<big>or fierce debate</big>
+🌑🌕: 01: Packed Collections of Bits
+
+🌑🌑: 00: Wraps of Information & Infrastructure Control Symbols
+
+🌑🌑🌕: 001: Connected Infrastructure Control Symbols (Can have Wraps and Bits.)
+
+🌑🌑🌑: 000: Information Wraps, Bits
+
+🌑🌑🌑🌕: 0001: Wraps of Information
+🌑🌑🌑🌕🌕: 0001 1: Wrap ON
+🌑🌑🌑🌕🌑: 0001 0: Wrap OFF
+
+🌑🌑🌑🌑: 0000: Raw bits & Bit Composits
+
+The sequence of bits signals if each blocks are connected.
+
+Logical Direction separates each sequence in the Implementation's bit tree.
 
 <h2>STFU(0) in Text</h2>
 STFU is an <b>effective</b> and efficient standard for Referencing any STFU Universal Context and Representing it correctly.
@@ -98,6 +145,8 @@ When Connected, STFU Wrappers contain structured information about the Packing t
 Wrappers can contain any of the Expander, Packed Bits, or more STFU Symbol Wraps. (Only STFUx of any scope allows raw bits.)
 
 The Control Wraps include the elemental requirements for Accurate Representation, including Universal Context References, Means of Representation & Declaration of Structure, Logical Direction and Turns & Slots, and technical specifics.
+
+Control Wraps have an ON | OFF bit after a Connectedness bit, making it easy to find. 00{Connectedness}{ON,OFF} Then some Logical Direction bits and elementaries.
 
 <h3>Packed Collections of Bits</h3>
 Bits are contained in Packs, combined by spreading them across the scoped containers.
@@ -320,7 +369,7 @@ STFU: Standard Text Format - Universal provides an effective Standard encoding.
 
 The old "UTF8" described a simple method of providing a symbol that is easy to find that aligns the patterns of bits accurately.
 
-STFU uses this pattern and technique to include all of UTF in STFU and also provides other techniques like the scoped and arbitrary length STFU*.
+STFU uses this pattern and technique to include all of UTF in STFU plus STFU's Books of Symbols, Collections of Bits, Control Symbols, and also provides other techniques like the scoped and arbitrary length STFU(*).
 
 The leading bits signal that if it is an Expander
 
@@ -329,8 +378,9 @@ The leading bits signal that if it is an Expander
 10 it's a continuation of included bits
 
 0 is a Control Symbol or a Collection of Bits
-00 Control Symbol
+
 01 Collection of Bits
+00 Control Symbol Wrap
 
 This set, Whatevers 〰️ := 
 {Packed Bits, Control Symbols, Expanders}
@@ -380,7 +430,7 @@ The next symbol could be an unconnected wrapper with Whatevers inside!
 
 ON🌕 and 🌑OFF sequences ALWAYS have matching Symbol type, off can have more stuff in the Connected Control System too! 🤯
 
-The next 3i "4 bits" of "STFU8" have ↕️ Logical Direction and types too!
+The next 3i "4 bits" of "STFU8" have ↕️ Logical Directions and types too!
 
 <!--
 <H3>"STFU4": STFU3i Control Symbols</H3>
@@ -390,7 +440,7 @@ Starting with STFU4's "2 bit" Control Symbols,
 STFU3i has the minimal controls for wrappers in 4 bits total but is horribly inefficient for more than a few bits.
 -->
 
-<H3>Logical Direction ↕️</H3>
+<H3>Logical Directions ↕️</H3>
 Leading bit 00xx{0,1} is the Logical Direction
 
 The "5th bit" adds the Logical Direction!
