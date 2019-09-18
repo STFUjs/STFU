@@ -1,5 +1,4 @@
 
-
 STFU(0)
 
 
@@ -19,11 +18,11 @@ STFU: STANDARD TEXT FORMAT - UNIVERSAL
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
-STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using Wraps of Information and Infrastructures (bits) and provides standards for the elementary processing of "Lines" of bits for Accurate Representation of Concepts in STFU.
+STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using Wraps of Information and Inclusions of Infrastructures. STFU provides standards for the elementary Representation of "Lines" of bits for Accurate Representation of Concepts in STFU.
 
-STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Universal Contexts that includes the presenting any diversity of Representations and to perform any capability using STFU.
+STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Universal Contexts that include the presenting any diversity of Representations and to perform any capability using STFU.
 
-STFU has a standard "text" form that uses @(@) & !()() Universal Context References in "UTF8"/"ascii" & "HTTP".
+STFU has a standard "text" form that uses @(@) & !()() Universal Context References in "UTF8"/"ascii" & "HTTP" and the transitional STFU(0) "text".
 
 STFU has an arbitrary bit scope STFU(*) that includes the optimized STFU(7) sometimes called "STFU8" and the formalised STFU(f) "STFU16" that all have the same standard Connectedness Tree with Expanders, Packed Collections of Bits, Wraps of Information, and Infrastructures.
 
@@ -68,9 +67,46 @@ Packed Bits are sequential in Blocks.
 
 In "STFU8": STFU(7), 00xxxxxx are the 5i "6" bits. Implementations might use a masked bit field or shift when representing them as a LINE.
 
+<h2>Connected Wraps & Infrastructures:</h2>
+
+🌑🌑🌕: 001: Connected Inclusion of Infrastructure
+🌑🌑🌑: 000: STFU WRAP!
+
+Connected Inclusions of specific technical information make STFU effective.
+
+An inclusion is formally structured data that provides internal technical data to assure Accurate Representation of your Concepts in bits.
+
+<h2>STFU Wrap {ON,OFF}:</h2>
+
+🌑🌑🌑🌕: 0001: STFU WRAP ON!
+🌑🌑🌑🌑: 0000: STFU WRAP OFF!
+
+STFU WRAP includes Wraps of Information, Content in Expanders, Packed Collections of Bits, more Wraps of Information inside, Declarations of structures and bits, and the occasional infrastructure inclusions.
+
+It's a Wrap.
+
+<h1>Logical Direction:</h1>
+
+After the "4" 3i bits in the Tree of Connectedness, each consequent bit and any more bits in the arbitrary scope STFU indicate the Logical Directions of each Turn.
+
+In "STFU8": STFU(7), there are "4" 3i more bits in the Block.
+
+Each Indication of Logical Direction, Turns in the Implementation, refined the Resolver.
+
+{🌑: ,🌕: }
+
+<h2>Indicated Direction:</h2>
+
+⏩ STFU.
+
+
+<hr>
+
+<s>
+<font size=+2 color=red>Dont like this. Connectedness first.</font>
+
 <h2>Wraps or Infrastructures:</h2>
 
-<font size=+2 color=red>Dont like this. Connectedness first.</font>
 
 
 🌑🌑: 00: Wraps or Infrastructures
@@ -110,17 +146,12 @@ If it is a Infrastructure, the fourth bit selects the Line.
 🌑🌑🌑🌕: 0001: Infrastructure LINE 🌕 ("active" Lines of Bits)
 🌑🌑🌑🌑: 0000: Infrastructure LINE 🌑 ("Banked" Lines of Bits)
 
-<h1>Logical Direction:</h1>
 
-After the "4" bits in the Tree of Connectedness, each consequent bit and any more bits in the arbitrary scope STFU indicate the Logical Directions of each Turn.
 
-In "STFU8": STFU(7), there are "4" 3i more bits in the Block.
 
-Each Indication of Logical Direction, Turns in the Implementation, refined the Resolver.
 
-{🌑: ,🌕: }
 
-<h2>Indicated Direction:</h2>
+
 
 <h3>Wraps of Information: {ON,OFF}</h3>
 
@@ -140,7 +171,7 @@ The Available and Banked ("cached") LINEs of Bits
 
 
 
-
+<!--
 
 🌑🌑🌑🌑 🌕: 0000 1: Infrastructure LINE 🌑🌕 "Banked" (Containers of Bits) & Controls
 🌑🌑🌑🌑 🌑: 0000 0: Infrastructure LINE 🌑🌑 "Banked" (Containers of Bits) & raw bits
@@ -185,8 +216,13 @@ The sequence of bits signals if each blocks are connected.
 Logical Direction separates each sequence in the Implementation's bit tree.
 
 -->
+</s>
 
-<h2>STFU(0) in Text</h2>
+<hr>
+
+
+
+<h2>STFU(0) in Text & HTTP</h2>
 STFU is an <b>effective</b> and efficient standard for Referencing any STFU Universal Context and Representing it correctly.
 
 @(you@your.site.tld)
@@ -197,18 +233,44 @@ And any Associative Reference
 
 Within or between any Context.
 
-STFU provides an Accurate Means of Representation, direct control of ~(bits), and Declarations of Structure *(@(@)) or ~(type) inside!
+STFU provides an Accurate Means of Representation, direct control of ~(bits), and Declarations of Structure *(@(@)) and whats inside!
+
+<h3>HTTP Encoding, "IRI Path" & "file names"</h3>
+
+Accessing STFU using HTTP is very simple.
+
+The standard STFU Reference is reduced to a @(@) Context or !()() Universal Context that also serves as "file name" with all characters.
+
+Your STFU Content goes in STFU Context "file" @(@) like "@(you'stuff'thing'3@your.tld)"
+
+Associative References are transported by either including them in a file name that can't exist or by a POST process. 
+
+@(@)() "file" is appended \0a with each Associative Reference.
+
+@(you'stuff'thing'3@your.tld)(@(me@me.some.tld)(*(@(me'reference'types@me.some.tld))'(type'26)(a4)))
+
+Goes into "file" "@(you'stuff'thing'3@your.tld)()"
+
+Typically the service will validate the input and check if the local Context file exists, reducing the file name to match it, then appending the Associative Reference into @(@)() with \0a.
+
+@(@) is your STFU Context "cube", with whatevers inside.
+
+@(@)() is the "ball" of Associated References appended whenever one comes.
+
+The !() and !()() Universal Context is more structured but performs exactly the same way.
+
+STFU prefers fully formed STFU(8) structure.
 
 <h2>STFU(*), STFU(7) & STFU(f), & STFUx(*)</h2>
 STFU is an <b>effective</b> and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
 
-STFU "text" STFU(0) includes the complete STFU Standard in "UTF" or "ascii" formats including encodings like json, and has both a @(@)() Context and Universal !()() form.
+STFU "text" STFU(0) includes the complete STFU Standard in "UTF" or "ascii" formats and has both a @(@)() Context and Universal !()() form.
 
-STFU(0) is optimized to pass through HTTP and text encodings while retaining the syntax. ( @(@)() is double ()'s because HTTP.)
+STFU(0) is optimized to pass through HTTP and text encodings while retaining the entire syntax. ( @(@)() is double ()'s because HTTP.)
 
 The Packed <b>STFU(*): Standard Text Format - Universal</b> standard includes arbitrary and fixed-scope binary encodings that contain all parts of the STFU Standard accurately, optimized for "STFU8": STFU(7).
 
-STFU contains 3 primary parts: STFU Control Symbol Wrappers, Collections of Bits, and STFU Expanders that include the entire Unicode plus the STFU Books of Symbols.
+STFU contains 3 primary parts: STFU Concept Wrappers, Collections of Bits, and STFU Expanders that include the entire Unicode plus the STFU Books of Symbols.
 
 Leading Bits:
 
@@ -472,6 +534,69 @@ Not only can it accurately represent a reference or some concept, STFU also make
 See the tutorial or reference implementation.
 
 Use STFU's Standard Infrastructure.
+
+
+
+
+
+
+
+<h1>Transitions to Accurate Representation.</h1>
+
+Information, especially content, must always be an exactly the original content. Many encodings erroneously
+
+Correcting Encoding Problems
+
+"It's the Law"
+
+Overlapping encodings persist as an encoding problem.
+
+<u>Text <big> formatting</big>can <i>overlap <b> but should</u> not</i>, right?</b>
+
+STFU Formatting "code point" pages include standard representations including "UTF" line spacing.
+
+But there will always be the challenge of overlapping structure.
+
+Similarly in the Universal Context Tree, some Concepts overlap others.
+
+Frequently pages or line numbers overlap a span of content, especially where Concepts like an entity or place name is included on 2 or more lines or across pages.
+
+Page 400
+...
+line 25 and the text continues, but <b>Some Named
+line 26 Entity</b> spans multiple lines. Frequently an <b>Offset
+line 27 Pointer</b> can be used if the text is contiguous
+line 28 but the Concepts and References overlap severely.
+
+To heirchially represent and reference the structure of pages or lines with (book'chapter'page'line) is a recurring problem.
+
+STFU.
+
+XML Encodings
+
+HTML
+
+Most HTML "markup" is text layout like paragraph or line separators or formatting such as bold or text size; these have corresponding Unicode symbols. Structural layout is poorly implemented by HTML and complicates the extraction of Concepts for Accurate Representation.
+
+A layout is NOT the Concept therein, the Concept must be Accurately Represented, then a presentation of it using another structured Concept.
+
+STFU hates HTML.
+
+<h3>JSON</h3>
+
+The JavaScript encoding JSON is especially troubled.
+
+Beyond the \uffff and failed "UTF16", "UTF" "ascii" inlinement and "escape" sequences inside "quotes" fail to provide an accurate representation of the content.
+
+ STFU is way better... \u0021
+
+<hr>
+
+
+
+
+
+
 
 
 <h1>STFU(7) + "STFU8", STFU(f), & STFU(*) + STFUx</h1>
