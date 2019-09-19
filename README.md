@@ -18,15 +18,17 @@ STFU: STANDARD TEXT FORMAT - UNIVERSAL
 
 <h1>STFU: Standard Text Format - Universal</h1>
 
-STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using Wraps of Information and Inclusions of Infrastructures. STFU provides standards for the elementary Representation of "Lines" of bits for Accurate Representation of Concepts in STFU.
+STFU has a variety of matching formats that Accurately Represent all forms of communication and Conceptual Representation using Wraps of Information, STFU Expanders & Collections of Bits, Connected Inclusions plus Infrastructures. STFU provides standards for all processing of "Lines" of bits for Accurate Representation of Concepts in <b>STFU: Standard Text Format - Universal</b>.
 
 STFU includes the entire capacity to Declare and Accurately Represent all possible Concepts and information in Standard Universal Contexts that include the presenting any diversity of Representations and to perform any capability using STFU.
 
-STFU has a standard "text" form that uses @(@) & !()() Universal Context References in "UTF8"/"ascii" & "HTTP" and the transitional STFU(0) "text".
+STFU has an arbitrary bit scope STFU(*) that includes the optimized STFU(7) sometimes called "STFU8" and the formalised STFU(f) "STFU16" that all have the same standard Connectedness Tree with STFU Expanders, Packed Collections of Bits, Wraps of Information, and Connected Inclusions (with Infrastructures).
 
-STFU has an arbitrary bit scope STFU(*) that includes the optimized STFU(7) sometimes called "STFU8" and the formalised STFU(f) "STFU16" that all have the same standard Connectedness Tree with Expanders, Packed Collections of Bits, Wraps of Information, and Infrastructures.
+<b>STFU: Standard Text Format - Universal</b>'s STFU(7): "STFU8" and STFU(f): "STFU16" are the most effective of any encoding or packing options that use a "UTF8"-style Expander for STFU Books and "code points", Packed Collections of Bits, and the standard STFU Wraps and Universal References. Their first 8 bits have identical Connectedness Tree and STFU16 is fastest seekable. Both have Inclusions and full Associative References in the Universal Context!
 
-STFU: Standard Text Format - Universal uses a variable bit scope, STFU(0) in "text", STFU(*) is arbitrary, and "8-bit" STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
+STFU has a standard "text" form that uses @(@) or @(@)() & !()() Universal Context References in "UTF8"/"ascii" & "HTTP" and the transitional STFU(0) "text".
+
+<b>STFU: Standard Text Format - Universal </b>uses a variable bit scope, STFU(0) in "text", STFU(*) is arbitrary, and "8-bit" STFU(7) can be called "STFU8". ( STFU(f) "STFU16" )
 
 All hardware and "software" implementations shall be un-encumbered. Formal.
 
@@ -34,10 +36,29 @@ All hardware and "software" implementations shall be un-encumbered. Formal.
 
 STFU is Standard.
 
+<b>STFU: Standard Text Format - Universal </b>
+
+...
+
+<b>STFU: Standard Text Format - Universal </b> has a sequence of indicators of Connectedness:
+
+Expanders that hold characters and formatting symbols in STFU Books, 
+Packed Collections of Bits, 
+Technical Inclusions, 
+and Wrap ON|OFF indicator in the first four 3i bits. 
+These assure the Accurate Representation of Information in STFU.
+
+The next four 3i bits indicate Logical Direction of STFU's.
+
+Bits, Associative References, All methods of Wrapping Information, Declarations, and Infrastructures are
+indicated in the second four 3i bits in <b>STFU: Standard Text Format - Universal </b> 
+
+Any remaining bits in the scope's block (like 7i "8" more bits in STFU(f) "STFU16") typically indicate the size of the Wrap's Information or some specific Technical Inclusions inside.
+
 <h1>Leading Symbols (bits) in a Block:</h1>
 
 Bits are Symbols with high & low value:
-{1:🌕,0:🌑}
+{1:🌕,0:🌑}, X: option, x: bit.
 
 The first 3i "4" whole symbols (bits) of the Block provide the Connectedness Tree and signify what each is.
 
@@ -264,7 +285,7 @@ STFU prefers fully formed STFU(8) structure.
 <h2>STFU(*), STFU(7) & STFU(f), & STFUx(*)</h2>
 STFU is an <b>effective</b> and efficient standard for the comprehensive Accurate Representation of Inter-Associated Concepts and Universal Context References.
 
-STFU "text" STFU(0) includes the complete STFU Standard in "UTF" or "ascii" formats and has both a @(@)() Context and Universal !()() form.
+STFU "text" STFU(0) includes the complete STFU Standard with corrected "UTF" or "ascii" formats and has both a @(@)() Context and Universal !()() form.
 
 STFU(0) is optimized to pass through HTTP and text encodings while retaining the entire syntax. ( @(@)() is double ()'s because HTTP.)
 
